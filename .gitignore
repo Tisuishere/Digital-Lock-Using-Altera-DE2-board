@@ -1,0 +1,26 @@
+# Bỏ qua các thư mục sinh ra khi build mạch của Quartus
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+
+# Bỏ qua các file cấu hình tạm và file chạy
+*.flock
+*.qws
+*.bak
+*.done
+*.qmsg
+*.summary
+*.rpt
+*.jdi
+*.pin
+*.sof
+*.pof
+*.kpt
+*.cdb
+*.hdb
+*.ddb
+*.vwf
+*.qsf
+*.temp
