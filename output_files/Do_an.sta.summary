@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -6.734
+TNS   : -740.967
+
+Type  : Slow Model Setup 'clk_divider:u_clk_div|clk_out'
+Slack : -3.031
+TNS   : -16.284
+
+Type  : Slow Model Setup 'Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k'
+Slack : -1.838
+TNS   : -26.693
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -3.031
+TNS   : -6.025
+
+Type  : Slow Model Hold 'Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k'
+Slack : -0.080
+TNS   : -0.231
+
+Type  : Slow Model Hold 'clk_divider:u_clk_div|clk_out'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.941
+TNS   : -260.157
+
+Type  : Slow Model Minimum Pulse Width 'Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k'
+Slack : -0.742
+TNS   : -31.164
+
+Type  : Slow Model Minimum Pulse Width 'clk_divider:u_clk_div|clk_out'
+Slack : -0.742
+TNS   : -19.292
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.492
+TNS   : -129.329
+
+Type  : Fast Model Setup 'clk_divider:u_clk_div|clk_out'
+Slack : -0.223
+TNS   : -0.632
+
+Type  : Fast Model Setup 'Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k'
+Slack : -0.021
+TNS   : -0.126
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.597
+TNS   : -3.160
+
+Type  : Fast Model Hold 'Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clk_divider:u_clk_div|clk_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -175.380
+
+Type  : Fast Model Minimum Pulse Width 'Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k'
+Slack : -0.500
+TNS   : -21.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_divider:u_clk_div|clk_out'
+Slack : -0.500
+TNS   : -13.000
+
+------------------------------------------------------------
