@@ -1,5 +1,5 @@
 Fitter report for Do_an
-Thu May 07 10:25:40 2026
+Tue May 12 13:27:22 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,17 +63,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu May 07 10:25:40 2026           ;
+; Fitter Status                      ; Successful - Tue May 12 13:27:22 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Do_an                                           ;
 ; Top-level Entity Name              ; Lock_System_Top                                 ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C8                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 395 / 33,216 ( 1 % )                            ;
-;     Total combinational functions  ; 371 / 33,216 ( 1 % )                            ;
-;     Dedicated logic registers      ; 208 / 33,216 ( < 1 % )                          ;
-; Total registers                    ; 208                                             ;
+; Total logic elements               ; 478 / 33,216 ( 1 % )                            ;
+;     Total combinational functions  ; 456 / 33,216 ( 1 % )                            ;
+;     Dedicated logic registers      ; 255 / 33,216 ( < 1 % )                          ;
+; Total registers                    ; 255                                             ;
 ; Total pins                         ; 22 / 475 ( 5 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
@@ -165,8 +165,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 609 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 609 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 740 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 740 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -189,7 +189,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 606     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 737     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -205,26 +205,26 @@ The pin-out file can be found in C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Alte
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 395 / 33,216 ( 1 % )   ;
-;     -- Combinational with no register       ; 187                    ;
-;     -- Register only                        ; 24                     ;
-;     -- Combinational with a register        ; 184                    ;
+; Total logic elements                        ; 478 / 33,216 ( 1 % )   ;
+;     -- Combinational with no register       ; 223                    ;
+;     -- Register only                        ; 22                     ;
+;     -- Combinational with a register        ; 233                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 200                    ;
-;     -- 3 input functions                    ; 58                     ;
-;     -- <=2 input functions                  ; 113                    ;
-;     -- Register only                        ; 24                     ;
+;     -- 4 input functions                    ; 221                    ;
+;     -- 3 input functions                    ; 75                     ;
+;     -- <=2 input functions                  ; 160                    ;
+;     -- Register only                        ; 22                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 308                    ;
-;     -- arithmetic mode                      ; 63                     ;
+;     -- normal mode                          ; 369                    ;
+;     -- arithmetic mode                      ; 87                     ;
 ;                                             ;                        ;
-; Total registers*                            ; 208 / 34,593 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 208 / 33,216 ( < 1 % ) ;
+; Total registers*                            ; 255 / 34,593 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 255 / 33,216 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 33 / 2,076 ( 2 % )     ;
+; Total LABs:  partially or completely used   ; 39 / 2,076 ( 2 % )     ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 22 / 475 ( 5 % )       ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )         ;
@@ -240,11 +240,11 @@ The pin-out file can be found in C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Alte
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%           ;
-; Maximum fan-out                             ; 174                    ;
+; Peak interconnect usage (total/H/V)         ; 2% / 1% / 3%           ;
+; Maximum fan-out                             ; 221                    ;
 ; Highest non-global fan-out                  ; 32                     ;
-; Total fan-out                               ; 1901                   ;
-; Average fan-out                             ; 3.04                   ;
+; Total fan-out                               ; 2273                   ;
+; Average fan-out                             ; 3.01                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -257,25 +257,25 @@ The pin-out file can be found in C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Alte
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 395 / 33216 ( 1 % )   ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 187                   ; 0                              ;
-;     -- Register only                        ; 24                    ; 0                              ;
-;     -- Combinational with a register        ; 184                   ; 0                              ;
+; Total logic elements                        ; 478 / 33216 ( 1 % )   ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 223                   ; 0                              ;
+;     -- Register only                        ; 22                    ; 0                              ;
+;     -- Combinational with a register        ; 233                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 200                   ; 0                              ;
-;     -- 3 input functions                    ; 58                    ; 0                              ;
-;     -- <=2 input functions                  ; 113                   ; 0                              ;
-;     -- Register only                        ; 24                    ; 0                              ;
+;     -- 4 input functions                    ; 221                   ; 0                              ;
+;     -- 3 input functions                    ; 75                    ; 0                              ;
+;     -- <=2 input functions                  ; 160                   ; 0                              ;
+;     -- Register only                        ; 22                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 308                   ; 0                              ;
-;     -- arithmetic mode                      ; 63                    ; 0                              ;
+;     -- normal mode                          ; 369                   ; 0                              ;
+;     -- arithmetic mode                      ; 87                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 208                   ; 0                              ;
-;     -- Dedicated logic registers            ; 208 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
+; Total registers                             ; 255                   ; 0                              ;
+;     -- Dedicated logic registers            ; 255 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 33 / 2076 ( 2 % )     ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 39 / 2076 ( 2 % )     ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 22                    ; 0                              ;
@@ -291,8 +291,8 @@ The pin-out file can be found in C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Alte
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 1901                  ; 0                              ;
-;     -- Registered Connections               ; 785                   ; 0                              ;
+;     -- Total Connections                    ; 2273                  ; 0                              ;
+;     -- Registered Connections               ; 929                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -329,7 +329,7 @@ The pin-out file can be found in C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Alte
 ; COL[1]   ; H25   ; 5        ; 65           ; 26           ; 2           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; On           ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; COL[2]   ; H19   ; 5        ; 65           ; 26           ; 4           ; 13                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; On           ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; COL[3]   ; K19   ; 5        ; 65           ; 25           ; 1           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; On           ; 3.3-V LVTTL  ; Off         ; User                 ;
-; KEY[0]   ; N25   ; 5        ; 65           ; 19           ; 0           ; 14                    ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; KEY[0]   ; N25   ; 5        ; 65           ; 19           ; 0           ; 16                    ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -1096,12 +1096,12 @@ Note: User assignments will override these defaults. The user specified values a
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                         ; Library Name ;
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------+--------------+
-; |Lock_System_Top               ; 395 (0)     ; 208 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 22   ; 0            ; 187 (0)      ; 24 (0)            ; 184 (0)          ; |Lock_System_Top                                            ; work         ;
-;    |Lock_Controller:u_control| ; 146 (146)   ; 81 (81)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 65 (65)      ; 7 (7)             ; 74 (74)          ; |Lock_System_Top|Lock_Controller:u_control                  ; work         ;
-;    |Top_LCD:u_lcd_display|     ; 180 (131)   ; 97 (59)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 83 (72)      ; 16 (13)           ; 81 (45)          ; |Lock_System_Top|Top_LCD:u_lcd_display                      ; work         ;
-;       |LCD_Controller:u_lcd|   ; 50 (50)     ; 38 (38)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 3 (3)             ; 36 (36)          ; |Lock_System_Top|Top_LCD:u_lcd_display|LCD_Controller:u_lcd ; work         ;
+; |Lock_System_Top               ; 478 (0)     ; 255 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 22   ; 0            ; 223 (0)      ; 22 (0)            ; 233 (0)          ; |Lock_System_Top                                            ; work         ;
+;    |Lock_Controller:u_control| ; 218 (218)   ; 107 (107)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 111 (111)    ; 7 (7)             ; 100 (100)        ; |Lock_System_Top|Lock_Controller:u_control                  ; work         ;
+;    |Top_LCD:u_lcd_display|     ; 190 (140)   ; 118 (80)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 72 (60)      ; 13 (9)            ; 105 (70)         ; |Lock_System_Top|Top_LCD:u_lcd_display                      ; work         ;
+;       |LCD_Controller:u_lcd|   ; 51 (51)     ; 38 (38)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 4 (4)             ; 35 (35)          ; |Lock_System_Top|Top_LCD:u_lcd_display|LCD_Controller:u_lcd ; work         ;
 ;    |clk_divider:u_clk_div|     ; 24 (24)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 17 (17)          ; |Lock_System_Top|clk_divider:u_clk_div                      ; work         ;
-;    |keypad_scanner:u_scanner|  ; 45 (45)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 1 (1)             ; 12 (12)          ; |Lock_System_Top|keypad_scanner:u_scanner                   ; work         ;
+;    |keypad_scanner:u_scanner|  ; 46 (46)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 33 (33)      ; 2 (2)             ; 11 (11)          ; |Lock_System_Top|keypad_scanner:u_scanner                   ; work         ;
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1169,17 +1169,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - keypad_scanner:u_scanner|Selector2~6 ; 1                 ; 6       ;
 ;      - keypad_scanner:u_scanner|Selector2~7 ; 1                 ; 6       ;
 ; COL[0]                                      ;                   ;         ;
-;      - keypad_scanner:u_scanner|Equal0~0    ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Mux9~1      ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector3~2 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector3~4 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector2~0 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector0~0 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector0~1 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector2~1 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector2~2 ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|WideOr0~0   ; 1                 ; 6       ;
-;      - keypad_scanner:u_scanner|Selector2~7 ; 1                 ; 6       ;
+;      - keypad_scanner:u_scanner|Equal0~0    ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Mux9~1      ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector3~2 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector3~4 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector2~0 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector0~0 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector0~1 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector2~1 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector2~2 ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|WideOr0~0   ; 0                 ; 6       ;
+;      - keypad_scanner:u_scanner|Selector2~7 ; 0                 ; 6       ;
 ; COL[3]                                      ;                   ;         ;
 ;      - keypad_scanner:u_scanner|Equal0~0    ; 1                 ; 6       ;
 ;      - keypad_scanner:u_scanner|Mux9~0      ; 1                 ; 6       ;
@@ -1199,33 +1199,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                     ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                                                 ; PIN_N2             ; 174     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; KEY[0]                                                   ; PIN_N25            ; 14      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; KEY[0]                                                   ; PIN_N25            ; 59      ; Async. clear ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; Lock_Controller:u_control|delay_timer[12]~89             ; LCCOMB_X31_Y25_N22 ; 30      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lock_Controller:u_control|digit_count[2]~4               ; LCCOMB_X32_Y27_N6  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lock_Controller:u_control|entered_pass[9]~3              ; LCCOMB_X31_Y25_N14 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lock_Controller:u_control|lcd_status[2]~6                ; LCCOMB_X30_Y27_N20 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lock_Controller:u_control|lcd_status~12                  ; LCCOMB_X31_Y26_N10 ; 30      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; Lock_Controller:u_control|saved_pass[15]~5               ; LCCOMB_X32_Y27_N18 ; 17      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Lock_Controller:u_control|wrong_count[0]~1               ; LCCOMB_X31_Y25_N20 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_DATA[0]~4 ; LCCOMB_X38_Y25_N16 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LessThan0~3   ; LCCOMB_X27_Y18_N22 ; 17      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k        ; LCFF_X27_Y18_N13   ; 21      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SEND    ; LCFF_X37_Y25_N5    ; 12      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|btn_digit_pressed                  ; LCCOMB_X34_Y26_N24 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|btn_status_pressed                 ; LCCOMB_X34_Y25_N0  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|char_idx[0]~8                      ; LCCOMB_X36_Y25_N28 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|char_idx[4]                        ; LCFF_X35_Y25_N29   ; 12      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|digit_count[2]                     ; LCFF_X36_Y27_N17   ; 17      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|disp_state.11                      ; LCFF_X37_Y25_N13   ; 9       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|lcd_col[0]~0                       ; LCCOMB_X36_Y25_N12 ; 12      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|line2_buffer[6][0]~8               ; LCCOMB_X34_Y26_N0  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|line2_buffer[7][0]~6               ; LCCOMB_X34_Y26_N26 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|line2_buffer[8][0]~25              ; LCCOMB_X34_Y26_N30 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Top_LCD:u_lcd_display|line2_buffer[9][0]~9               ; LCCOMB_X34_Y26_N18 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; clk_divider:u_clk_div|clk_out                            ; LCFF_X34_Y7_N23    ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK12           ; --                        ;
-; keypad_scanner:u_scanner|Equal0~0                        ; LCCOMB_X35_Y27_N20 ; 11      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                                                 ; PIN_N2             ; 221     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; KEY[0]                                                   ; PIN_N25            ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; KEY[0]                                                   ; PIN_N25            ; 80      ; Async. clear ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; Lock_Controller:u_control|delay_timer[10]~3              ; LCCOMB_X42_Y21_N16 ; 30      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lock_Controller:u_control|entered_pass[4]~7              ; LCCOMB_X43_Y20_N4  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lock_Controller:u_control|input_locked                   ; LCFF_X42_Y23_N13   ; 30      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; Lock_Controller:u_control|input_locked~8                 ; LCCOMB_X42_Y23_N22 ; 26      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lock_Controller:u_control|lcd_status[0]~7                ; LCCOMB_X42_Y21_N10 ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lock_Controller:u_control|saved_pass[15]~3               ; LCCOMB_X44_Y21_N18 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Lock_Controller:u_control|wrong_count[2]~4               ; LCCOMB_X43_Y19_N4  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_DATA[0]~4 ; LCCOMB_X47_Y24_N14 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LessThan0~3   ; LCCOMB_X31_Y35_N26 ; 17      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k        ; LCFF_X31_Y35_N25   ; 21      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SEND    ; LCFF_X48_Y24_N27   ; 12      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|always1~0                          ; LCCOMB_X44_Y22_N20 ; 24      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|btn_digit_pressed                  ; LCCOMB_X44_Y22_N28 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|char_idx[0]~8                      ; LCCOMB_X49_Y24_N22 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|char_idx[4]                        ; LCFF_X49_Y24_N15   ; 11      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|digit_count[2]                     ; LCFF_X45_Y20_N9    ; 17      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|disp_state.11                      ; LCFF_X48_Y24_N7    ; 9       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|lcd_col[0]~0                       ; LCCOMB_X47_Y24_N28 ; 12      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|line2_buffer[6][0]~8               ; LCCOMB_X45_Y20_N0  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|line2_buffer[7][0]~6               ; LCCOMB_X46_Y20_N2  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|line2_buffer[8][0]~25              ; LCCOMB_X44_Y22_N16 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Top_LCD:u_lcd_display|line2_buffer[9][0]~9               ; LCCOMB_X46_Y20_N8  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clk_divider:u_clk_div|clk_out                            ; LCFF_X48_Y23_N25   ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; keypad_scanner:u_scanner|Equal0~0                        ; LCCOMB_X44_Y23_N6  ; 11      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +----------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1234,10 +1234,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
 ; Name                                              ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
-; CLOCK_50                                          ; PIN_N2           ; 174     ; Global Clock         ; GCLK2            ; --                        ;
-; KEY[0]                                            ; PIN_N25          ; 59      ; Global Clock         ; GCLK6            ; --                        ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k ; LCFF_X27_Y18_N13 ; 21      ; Global Clock         ; GCLK3            ; --                        ;
-; clk_divider:u_clk_div|clk_out                     ; LCFF_X34_Y7_N23  ; 13      ; Global Clock         ; GCLK12           ; --                        ;
+; CLOCK_50                                          ; PIN_N2           ; 221     ; Global Clock         ; GCLK2            ; --                        ;
+; KEY[0]                                            ; PIN_N25          ; 80      ; Global Clock         ; GCLK6            ; --                        ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_1k ; LCFF_X31_Y35_N25 ; 21      ; Global Clock         ; GCLK10           ; --                        ;
+; clk_divider:u_clk_div|clk_out                     ; LCFF_X48_Y23_N25 ; 13      ; Global Clock         ; GCLK5            ; --                        ;
 +---------------------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1246,100 +1246,120 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------+---------+
 ; Name                                                          ; Fan-Out ;
 +---------------------------------------------------------------+---------+
-; Top_LCD:u_lcd_display|char_idx[0]                             ; 32      ;
-; Top_LCD:u_lcd_display|char_idx[2]                             ; 31      ;
-; Lock_Controller:u_control|delay_timer[12]~89                  ; 30      ;
-; Lock_Controller:u_control|lcd_status~12                       ; 30      ;
-; Top_LCD:u_lcd_display|char_idx[1]                             ; 29      ;
-; Top_LCD:u_lcd_display|char_idx[3]                             ; 24      ;
-; Lock_Controller:u_control|saved_pass[15]~5                    ; 17      ;
-; keypad_scanner:u_scanner|data_out[0]                          ; 17      ;
+; Lock_Controller:u_control|state.S2_LOCK_PENALTY               ; 32      ;
+; Lock_Controller:u_control|delay_timer[10]~3                   ; 30      ;
+; Lock_Controller:u_control|delay_timer[10]~1                   ; 30      ;
+; Lock_Controller:u_control|input_locked                        ; 30      ;
+; Top_LCD:u_lcd_display|char_idx[1]                             ; 30      ;
+; Top_LCD:u_lcd_display|char_idx[0]                             ; 29      ;
+; Lock_Controller:u_control|input_locked~8                      ; 26      ;
+; Top_LCD:u_lcd_display|always1~0                               ; 24      ;
+; Top_LCD:u_lcd_display|char_idx[3]                             ; 23      ;
+; Top_LCD:u_lcd_display|char_idx[2]                             ; 23      ;
+; Lock_Controller:u_control|state.S4_WRONG                      ; 22      ;
+; Lock_Controller:u_control|entered_pass[4]~23                  ; 18      ;
+; Lock_Controller:u_control|lcd_status[2]                       ; 18      ;
+; Lock_Controller:u_control|lcd_status[1]                       ; 17      ;
+; Lock_Controller:u_control|lcd_status[0]                       ; 17      ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LessThan0~3        ; 17      ;
 ; Top_LCD:u_lcd_display|digit_count[2]                          ; 17      ;
-; Lock_Controller:u_control|entered_pass[9]~3                   ; 16      ;
-; Lock_Controller:u_control|entered_pass[9]~0                   ; 16      ;
-; Top_LCD:u_lcd_display|status_reg[0]                           ; 16      ;
+; Lock_Controller:u_control|saved_pass[15]~3                    ; 16      ;
+; Lock_Controller:u_control|entered_pass[4]~7                   ; 16      ;
+; KEY[0]                                                        ; 15      ;
 ; Lock_Controller:u_control|always1~0                           ; 15      ;
-; Top_LCD:u_lcd_display|status_reg[1]                           ; 15      ;
-; Top_LCD:u_lcd_display|status_reg[2]                           ; 15      ;
+; Top_LCD:u_lcd_display|line2_buffer~4                          ; 15      ;
+; Lock_Controller:u_control|state.000                           ; 14      ;
+; keypad_scanner:u_scanner|data_out[0]                          ; 14      ;
 ; COL[2]                                                        ; 13      ;
-; KEY[0]                                                        ; 13      ;
-; Lock_Controller:u_control|state.S2_LOCK_PENALTY               ; 13      ;
-; Lock_Controller:u_control|state.S0_ENTER_PASS                 ; 13      ;
 ; keypad_scanner:u_scanner|data_out[2]                          ; 13      ;
 ; keypad_scanner:u_scanner|data_out[1]                          ; 13      ;
 ; keypad_scanner:u_scanner|data_out[3]                          ; 13      ;
 ; keypad_scanner:u_scanner|state.00                             ; 13      ;
-; Top_LCD:u_lcd_display|line2_buffer~4                          ; 12      ;
 ; Top_LCD:u_lcd_display|lcd_col[0]~0                            ; 12      ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SEND         ; 12      ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SET_POS      ; 12      ;
 ; keypad_scanner:u_scanner|state.11                             ; 12      ;
-; Top_LCD:u_lcd_display|char_idx[4]                             ; 12      ;
 ; COL[0]                                                        ; 11      ;
 ; COL[1]                                                        ; 11      ;
-; Lock_Controller:u_control|key_pressed_pulse                   ; 11      ;
+; Lock_Controller:u_control|state.S3_NEW_PASS                   ; 11      ;
+; Lock_Controller:u_control|state.S1_UNLOCK                     ; 11      ;
 ; Top_LCD:u_lcd_display|digit_count[0]                          ; 11      ;
 ; keypad_scanner:u_scanner|Equal0~0                             ; 11      ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|count[2]           ; 11      ;
-; Lock_Controller:u_control|state.S1_UNLOCK                     ; 10      ;
+; Top_LCD:u_lcd_display|char_idx[4]                             ; 11      ;
+; Lock_Controller:u_control|state~19                            ; 10      ;
 ; keypad_scanner:u_scanner|state.10                             ; 10      ;
 ; keypad_scanner:u_scanner|state.01                             ; 10      ;
 ; Top_LCD:u_lcd_display|digit_count[1]                          ; 10      ;
 ; COL[3]                                                        ; 9       ;
-; Lock_Controller:u_control|digit_count[2]                      ; 9       ;
+; Lock_Controller:u_control|state~20                            ; 9       ;
 ; Top_LCD:u_lcd_display|btn_digit_pressed                       ; 9       ;
 ; Top_LCD:u_lcd_display|disp_state.11                           ; 9       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|count[1]           ; 9       ;
-; Lock_Controller:u_control|state.S3_NEW_PASS                   ; 8       ;
-; Lock_Controller:u_control|Equal3~0                            ; 8       ;
-; Lock_Controller:u_control|Equal1~10                           ; 8       ;
+; Lock_Controller:u_control|digit_count[2]                      ; 8       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|oReady             ; 8       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|count[0]           ; 8       ;
+; Lock_Controller:u_control|LessThan5~7                         ; 7       ;
+; Lock_Controller:u_control|Equal3~0                            ; 7       ;
+; Lock_Controller:u_control|Equal1~10                           ; 7       ;
 ; Top_LCD:u_lcd_display|line2_buffer[6][0]~8                    ; 7       ;
 ; Top_LCD:u_lcd_display|line2_buffer[8][0]~25                   ; 6       ;
-; Lock_Controller:u_control|digit_count[2]~2                    ; 6       ;
+; Lock_Controller:u_control|state~22                            ; 6       ;
+; Lock_Controller:u_control|digit_count[0]                      ; 6       ;
 ; Top_LCD:u_lcd_display|line2_buffer[9][0]~9                    ; 6       ;
 ; Top_LCD:u_lcd_display|line2_buffer[7][0]~6                    ; 6       ;
+; Top_LCD:u_lcd_display|disp_state.10                           ; 6       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_DATA[0]~4      ; 6       ;
-; Lock_Controller:u_control|update_digit~6                      ; 5       ;
-; Lock_Controller:u_control|state~24                            ; 5       ;
 ; keypad_scanner:u_scanner|Selector0~0                          ; 5       ;
-; Lock_Controller:u_control|state.S4_WRONG                      ; 5       ;
-; Lock_Controller:u_control|digit_count[0]                      ; 5       ;
-; Top_LCD:u_lcd_display|disp_state.10                           ; 5       ;
+; Lock_Controller:u_control|LessThan4~7                         ; 5       ;
+; Lock_Controller:u_control|digit_count[1]                      ; 5       ;
+; Lock_Controller:u_control|wrong_count[0]                      ; 5       ;
 ; Top_LCD:u_lcd_display|char_idx[0]~8                           ; 5       ;
+; Top_LCD:u_lcd_display|refresh_tick                            ; 5       ;
 ; Top_LCD:u_lcd_display|disp_state.00                           ; 5       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.INIT_HOLD    ; 5       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.INIT         ; 5       ;
-; Lock_Controller:u_control|delay_timer[28]                     ; 5       ;
+; Lock_Controller:u_control|digit_count[0]~4                    ; 4       ;
 ; keypad_scanner:u_scanner|Selector2~0                          ; 4       ;
-; Lock_Controller:u_control|saved_pass[15]~4                    ; 4       ;
-; Lock_Controller:u_control|digit_count[1]                      ; 4       ;
+; Lock_Controller:u_control|delay_timer[12]                     ; 4       ;
+; Lock_Controller:u_control|delay_timer[29]                     ; 4       ;
+; Lock_Controller:u_control|delay_timer[28]                     ; 4       ;
+; Lock_Controller:u_control|Equal0~0                            ; 4       ;
 ; Lock_Controller:u_control|valid_sync2                         ; 4       ;
-; Lock_Controller:u_control|Equal2~0                            ; 4       ;
-; Lock_Controller:u_control|wrong_count[0]                      ; 4       ;
+; Lock_Controller:u_control|state~18                            ; 4       ;
+; Lock_Controller:u_control|wrong_count[1]                      ; 4       ;
 ; Lock_Controller:u_control|update_digit                        ; 4       ;
-; Top_LCD:u_lcd_display|refresh_tick                            ; 4       ;
-; Top_LCD:u_lcd_display|Decoder3~0                              ; 4       ;
-; Top_LCD:u_lcd_display|Mux6~5                                  ; 4       ;
+; Top_LCD:u_lcd_display|line1_buffer[2][4]                      ; 4       ;
+; Top_LCD:u_lcd_display|Mux7~0                                  ; 4       ;
 ; Top_LCD:u_lcd_display|lcd_valid                               ; 4       ;
 ; Top_LCD:u_lcd_display|disp_state.01                           ; 4       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.IDLE         ; 4       ;
-; Lock_Controller:u_control|delay_timer[15]                     ; 4       ;
-; Lock_Controller:u_control|delay_timer[22]                     ; 4       ;
-; Lock_Controller:u_control|delay_timer[25]                     ; 4       ;
-; Lock_Controller:u_control|delay_timer[24]                     ; 4       ;
-; Lock_Controller:u_control|state~35                            ; 3       ;
-; Lock_Controller:u_control|digit_count[2]~4                    ; 3       ;
+; Lock_Controller:u_control|state~27                            ; 3       ;
 ; Lock_Controller:u_control|state~25                            ; 3       ;
-; Lock_Controller:u_control|wrong_count[0]~1                    ; 3       ;
-; Lock_Controller:u_control|lcd_status[2]~6                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[12]~30                  ; 3       ;
-; Lock_Controller:u_control|LessThan4~9                         ; 3       ;
-; Lock_Controller:u_control|LessThan3~7                         ; 3       ;
-; Lock_Controller:u_control|Add0~0                              ; 3       ;
+; Lock_Controller:u_control|wrong_count[2]~4                    ; 3       ;
+; Lock_Controller:u_control|lcd_status[0]~7                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[10]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[9]                      ; 3       ;
+; Lock_Controller:u_control|delay_timer[8]                      ; 3       ;
+; Lock_Controller:u_control|delay_timer[7]                      ; 3       ;
+; Lock_Controller:u_control|delay_timer[16]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[14]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[17]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[15]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[11]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[13]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[18]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[19]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[21]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[20]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[27]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[26]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[23]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[22]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[25]                     ; 3       ;
+; Lock_Controller:u_control|delay_timer[24]                     ; 3       ;
 ; Lock_Controller:u_control|valid_prev                          ; 3       ;
+; Lock_Controller:u_control|digit_count[0]~0                    ; 3       ;
 ; Lock_Controller:u_control|entered_pass[10]                    ; 3       ;
 ; Lock_Controller:u_control|entered_pass[11]                    ; 3       ;
 ; Lock_Controller:u_control|entered_pass[8]                     ; 3       ;
@@ -1352,7 +1372,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Lock_Controller:u_control|entered_pass[3]                     ; 3       ;
 ; Lock_Controller:u_control|entered_pass[0]                     ; 3       ;
 ; Lock_Controller:u_control|entered_pass[1]                     ; 3       ;
-; Lock_Controller:u_control|wrong_count[1]                      ; 3       ;
+; Lock_Controller:u_control|Equal2~0                            ; 3       ;
+; Lock_Controller:u_control|wrong_count[2]                      ; 3       ;
 ; Top_LCD:u_lcd_display|line2_buffer~24                         ; 3       ;
 ; Top_LCD:u_lcd_display|line2_buffer~17                         ; 3       ;
 ; Top_LCD:u_lcd_display|line2_buffer~15                         ; 3       ;
@@ -1360,38 +1381,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Top_LCD:u_lcd_display|line2_buffer~12                         ; 3       ;
 ; Top_LCD:u_lcd_display|btn_digit_prev                          ; 3       ;
 ; Top_LCD:u_lcd_display|line2_buffer~5                          ; 3       ;
-; Top_LCD:u_lcd_display|btn_status_pressed                      ; 3       ;
 ; Lock_Controller:u_control|update_status                       ; 3       ;
 ; Top_LCD:u_lcd_display|Selector0~0                             ; 3       ;
 ; Top_LCD:u_lcd_display|LessThan3~0                             ; 3       ;
-; Top_LCD:u_lcd_display|Mux6~15                                 ; 3       ;
-; Top_LCD:u_lcd_display|Mux6~14                                 ; 3       ;
 ; clk_divider:u_clk_div|Equal0~4                                ; 3       ;
-; Lock_Controller:u_control|delay_timer[10]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[9]                      ; 3       ;
-; Lock_Controller:u_control|delay_timer[8]                      ; 3       ;
-; Lock_Controller:u_control|delay_timer[7]                      ; 3       ;
-; Lock_Controller:u_control|delay_timer[11]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[12]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[13]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[19]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[18]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[17]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[16]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[14]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[23]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[21]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[20]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[26]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[27]                     ; 3       ;
-; Lock_Controller:u_control|delay_timer[29]                     ; 3       ;
-; Lock_Controller:u_control|digit_count[2]~8                    ; 2       ;
-; Lock_Controller:u_control|Selector31~4                        ; 2       ;
-; Lock_Controller:u_control|lcd_status[2]~13                    ; 2       ;
-; Lock_Controller:u_control|state~21                            ; 2       ;
-; Lock_Controller:u_control|state~20                            ; 2       ;
-; Lock_Controller:u_control|state~19                            ; 2       ;
-; Lock_Controller:u_control|state~18                            ; 2       ;
+; Lock_Controller:u_control|debounce_timer[16]                  ; 3       ;
+; Lock_Controller:u_control|debounce_timer[24]                  ; 3       ;
+; Lock_Controller:u_control|state~39                            ; 2       ;
+; Lock_Controller:u_control|wrong_count[2]~7                    ; 2       ;
+; Lock_Controller:u_control|update_digit~6                      ; 2       ;
+; Lock_Controller:u_control|input_locked~1                      ; 2       ;
+; Lock_Controller:u_control|digit_count[1]~5                    ; 2       ;
+; Lock_Controller:u_control|state~32                            ; 2       ;
+; Lock_Controller:u_control|entered_pass[4]~2                   ; 2       ;
+; Lock_Controller:u_control|state~23                            ; 2       ;
+; Lock_Controller:u_control|digit_count[0]~1                    ; 2       ;
 ; Lock_Controller:u_control|wrong_count~2                       ; 2       ;
 ; keypad_scanner:u_scanner|Selector1~1                          ; 2       ;
 ; keypad_scanner:u_scanner|Selector1~0                          ; 2       ;
@@ -1401,31 +1405,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; keypad_scanner:u_scanner|Selector0~3                          ; 2       ;
 ; keypad_scanner:u_scanner|Selector0~2                          ; 2       ;
 ; keypad_scanner:u_scanner|Selector0~1                          ; 2       ;
+; Lock_Controller:u_control|saved_pass[15]~2                    ; 2       ;
 ; Lock_Controller:u_control|lcd_status~8                        ; 2       ;
-; Lock_Controller:u_control|Selector31~3                        ; 2       ;
-; Lock_Controller:u_control|Selector31~2                        ; 2       ;
-; Lock_Controller:u_control|LessThan4~8                         ; 2       ;
-; Lock_Controller:u_control|LessThan4~6                         ; 2       ;
-; Lock_Controller:u_control|LessThan4~2                         ; 2       ;
+; Lock_Controller:u_control|lcd_status[0]~6                     ; 2       ;
 ; Lock_Controller:u_control|LessThan4~0                         ; 2       ;
-; Lock_Controller:u_control|LessThan3~0                         ; 2       ;
-; Lock_Controller:u_control|always1~1                           ; 2       ;
-; Lock_Controller:u_control|wrong_count[2]                      ; 2       ;
+; Lock_Controller:u_control|lcd_status[0]~3                     ; 2       ;
+; Lock_Controller:u_control|lcd_status[0]~2                     ; 2       ;
+; Lock_Controller:u_control|Equal3~1                            ; 2       ;
 ; Top_LCD:u_lcd_display|line2_buffer~13                         ; 2       ;
+; Top_LCD:u_lcd_display|Decoder1~4                              ; 2       ;
 ; Top_LCD:u_lcd_display|line2_buffer~11                         ; 2       ;
+; Top_LCD:u_lcd_display|WideOr0~0                               ; 2       ;
 ; Top_LCD:u_lcd_display|line2_buffer~10                         ; 2       ;
+; Top_LCD:u_lcd_display|Decoder1~1                              ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer~0                          ; 2       ;
+; Top_LCD:u_lcd_display|Decoder2~0                              ; 2       ;
 ; Top_LCD:u_lcd_display|btn_status_prev                         ; 2       ;
-; Top_LCD:u_lcd_display|lcd_data_in~11                          ; 2       ;
-; Top_LCD:u_lcd_display|line2_buffer[6][5]                      ; 2       ;
-; Top_LCD:u_lcd_display|line2_buffer[7][5]                      ; 2       ;
+; Top_LCD:u_lcd_display|lcd_data_in~18                          ; 2       ;
 ; Top_LCD:u_lcd_display|line2_buffer[8][5]                      ; 2       ;
 ; Top_LCD:u_lcd_display|line2_buffer[9][5]                      ; 2       ;
-; Top_LCD:u_lcd_display|Mux6~21                                 ; 2       ;
-; Top_LCD:u_lcd_display|Mux3~0                                  ; 2       ;
-; Top_LCD:u_lcd_display|Mux14~1                                 ; 2       ;
-; Top_LCD:u_lcd_display|Mux14~0                                 ; 2       ;
-; Top_LCD:u_lcd_display|Mux6~10                                 ; 2       ;
-; Top_LCD:u_lcd_display|Mux6~6                                  ; 2       ;
+; Top_LCD:u_lcd_display|line2_buffer[6][5]                      ; 2       ;
+; Top_LCD:u_lcd_display|line2_buffer[7][5]                      ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][6]                      ; 2       ;
+; Top_LCD:u_lcd_display|lcd_data_in~8                           ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[1][4]                      ; 2       ;
+; Top_LCD:u_lcd_display|lcd_data_in~4                           ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[5][3]                      ; 2       ;
+; Top_LCD:u_lcd_display|Mux7~8                                  ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[3][3]                      ; 2       ;
+; Top_LCD:u_lcd_display|Mux15~1                                 ; 2       ;
+; Top_LCD:u_lcd_display|Mux15~0                                 ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][4]                      ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[6][1]                      ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[5][6]                      ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][0]                      ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[2][1]                      ; 2       ;
 ; keypad_scanner:u_scanner|Selector6~2                          ; 2       ;
 ; clk_divider:u_clk_div|count[15]                               ; 2       ;
 ; clk_divider:u_clk_div|count[14]                               ; 2       ;
@@ -1448,6 +1462,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_EN             ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_DATA[7]        ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_DATA[6]        ; 2       ;
+; Lock_Controller:u_control|debounce_timer[14]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[13]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[12]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[11]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[9]                   ; 2       ;
+; Lock_Controller:u_control|debounce_timer[8]                   ; 2       ;
+; Lock_Controller:u_control|debounce_timer[7]                   ; 2       ;
+; Lock_Controller:u_control|debounce_timer[6]                   ; 2       ;
+; Lock_Controller:u_control|debounce_timer[10]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[23]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[15]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[17]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[22]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[21]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[20]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[19]                  ; 2       ;
+; Lock_Controller:u_control|debounce_timer[18]                  ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_count[15]      ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_count[14]      ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_count[13]      ; 2       ;
@@ -1461,62 +1492,121 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_count[11]      ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_count[10]      ; 2       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|clk_count[9]       ; 2       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][6]~feeder               ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[3][6]~10                   ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[6][4]~30                   ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[1][2]~8                    ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[4][1]~6                    ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][1]~5                    ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][0]~3                    ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.INIT_HOLD~0  ; 1       ;
 ; keypad_scanner:u_scanner|row[3]~2                             ; 1       ;
 ; keypad_scanner:u_scanner|row[2]~1                             ; 1       ;
 ; keypad_scanner:u_scanner|row[1]~0                             ; 1       ;
-; Top_LCD:u_lcd_display|Selector2~2                             ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~16                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~15                                 ; 1       ;
 ; Top_LCD:u_lcd_display|Selector2~1                             ; 1       ;
+; Top_LCD:u_lcd_display|Selector2~0                             ; 1       ;
 ; keypad_scanner:u_scanner|Selector0~9                          ; 1       ;
 ; keypad_scanner:u_scanner|Selector0~8                          ; 1       ;
 ; keypad_scanner:u_scanner|Selector2~7                          ; 1       ;
 ; keypad_scanner:u_scanner|Selector2~6                          ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~28                                 ; 1       ;
-; Lock_Controller:u_control|state~34                            ; 1       ;
+; Lock_Controller:u_control|state~38                            ; 1       ;
 ; Top_LCD:u_lcd_display|Selector9~3                             ; 1       ;
-; Top_LCD:u_lcd_display|Mux13~5                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux14~5                                 ; 1       ;
 ; keypad_scanner:u_scanner|Selector6~3                          ; 1       ;
+; Lock_Controller:u_control|Add3~88                             ; 1       ;
+; Lock_Controller:u_control|Add3~87                             ; 1       ;
+; Lock_Controller:u_control|Add3~86                             ; 1       ;
+; Lock_Controller:u_control|Add3~85                             ; 1       ;
+; Lock_Controller:u_control|Add3~84                             ; 1       ;
+; Lock_Controller:u_control|Add3~83                             ; 1       ;
+; Lock_Controller:u_control|Add3~82                             ; 1       ;
 ; keypad_scanner:u_scanner|valid                                ; 1       ;
-; Lock_Controller:u_control|entered_pass~18                     ; 1       ;
-; Lock_Controller:u_control|entered_pass~17                     ; 1       ;
-; Lock_Controller:u_control|entered_pass~16                     ; 1       ;
-; Lock_Controller:u_control|entered_pass~15                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~22                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~21                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~20                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~19                     ; 1       ;
+; Lock_Controller:u_control|state~37                            ; 1       ;
+; Lock_Controller:u_control|state~36                            ; 1       ;
+; Lock_Controller:u_control|Add3~81                             ; 1       ;
+; Lock_Controller:u_control|Add3~80                             ; 1       ;
+; Lock_Controller:u_control|Add3~79                             ; 1       ;
+; Lock_Controller:u_control|Add3~78                             ; 1       ;
+; Lock_Controller:u_control|Add3~77                             ; 1       ;
+; Lock_Controller:u_control|Add3~76                             ; 1       ;
+; Lock_Controller:u_control|Add3~75                             ; 1       ;
+; Lock_Controller:u_control|Add3~74                             ; 1       ;
+; Lock_Controller:u_control|Add3~73                             ; 1       ;
+; Lock_Controller:u_control|Add3~72                             ; 1       ;
+; Lock_Controller:u_control|Add3~71                             ; 1       ;
+; Lock_Controller:u_control|Add3~70                             ; 1       ;
+; Lock_Controller:u_control|Add3~69                             ; 1       ;
+; Lock_Controller:u_control|Add3~68                             ; 1       ;
+; Lock_Controller:u_control|Add3~67                             ; 1       ;
+; Lock_Controller:u_control|delay_timer[29]~4                   ; 1       ;
+; Lock_Controller:u_control|Add3~64                             ; 1       ;
+; Lock_Controller:u_control|Add3~63                             ; 1       ;
+; Lock_Controller:u_control|Add3~62                             ; 1       ;
+; Lock_Controller:u_control|Add3~61                             ; 1       ;
+; Lock_Controller:u_control|Add3~60                             ; 1       ;
+; Lock_Controller:u_control|Add3~59                             ; 1       ;
+; Lock_Controller:u_control|delay_timer[10]~2                   ; 1       ;
+; Lock_Controller:u_control|Add3~58                             ; 1       ;
+; Lock_Controller:u_control|delay_timer[0]                      ; 1       ;
+; Lock_Controller:u_control|delay_timer[1]                      ; 1       ;
+; Lock_Controller:u_control|delay_timer[2]                      ; 1       ;
+; Lock_Controller:u_control|delay_timer[3]                      ; 1       ;
+; Lock_Controller:u_control|delay_timer[4]                      ; 1       ;
+; Lock_Controller:u_control|delay_timer[5]                      ; 1       ;
+; Lock_Controller:u_control|delay_timer[6]                      ; 1       ;
+; Lock_Controller:u_control|input_locked~7                      ; 1       ;
+; Lock_Controller:u_control|input_locked~6                      ; 1       ;
+; Lock_Controller:u_control|input_locked~5                      ; 1       ;
+; Lock_Controller:u_control|input_locked~4                      ; 1       ;
+; Lock_Controller:u_control|input_locked~3                      ; 1       ;
+; Lock_Controller:u_control|input_locked~2                      ; 1       ;
+; Lock_Controller:u_control|input_locked~0                      ; 1       ;
+; Lock_Controller:u_control|valid_sync1                         ; 1       ;
+; Lock_Controller:u_control|state~35                            ; 1       ;
+; Lock_Controller:u_control|state~34                            ; 1       ;
+; Lock_Controller:u_control|digit_count[1]~8                    ; 1       ;
+; Lock_Controller:u_control|digit_count[0]~7                    ; 1       ;
+; Lock_Controller:u_control|digit_count[2]~6                    ; 1       ;
+; Lock_Controller:u_control|Add1~0                              ; 1       ;
+; Lock_Controller:u_control|digit_count[0]~3                    ; 1       ;
+; Lock_Controller:u_control|digit_count[0]~2                    ; 1       ;
 ; Lock_Controller:u_control|state~33                            ; 1       ;
-; Lock_Controller:u_control|state~32                            ; 1       ;
 ; Lock_Controller:u_control|state~31                            ; 1       ;
 ; Lock_Controller:u_control|state~30                            ; 1       ;
-; Lock_Controller:u_control|digit_count~7                       ; 1       ;
-; Lock_Controller:u_control|digit_count~6                       ; 1       ;
-; Lock_Controller:u_control|digit_count[2]~5                    ; 1       ;
-; Lock_Controller:u_control|digit_count[2]~3                    ; 1       ;
-; Lock_Controller:u_control|valid_sync1                         ; 1       ;
 ; Lock_Controller:u_control|state~29                            ; 1       ;
-; Lock_Controller:u_control|state~28                            ; 1       ;
-; Lock_Controller:u_control|state~27                            ; 1       ;
-; Lock_Controller:u_control|state~26                            ; 1       ;
-; Lock_Controller:u_control|entered_pass~14                     ; 1       ;
-; Lock_Controller:u_control|entered_pass[14]                    ; 1       ;
-; Lock_Controller:u_control|entered_pass~13                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~18                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~17                     ; 1       ;
 ; Lock_Controller:u_control|entered_pass[15]                    ; 1       ;
-; Lock_Controller:u_control|entered_pass~12                     ; 1       ;
-; Lock_Controller:u_control|entered_pass~11                     ; 1       ;
+; Lock_Controller:u_control|entered_pass[14]                    ; 1       ;
+; Lock_Controller:u_control|entered_pass~16                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~15                     ; 1       ;
 ; Lock_Controller:u_control|entered_pass[13]                    ; 1       ;
 ; Lock_Controller:u_control|entered_pass[12]                    ; 1       ;
+; Lock_Controller:u_control|entered_pass~14                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~13                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~12                     ; 1       ;
+; Lock_Controller:u_control|entered_pass~11                     ; 1       ;
 ; Lock_Controller:u_control|entered_pass~10                     ; 1       ;
 ; Lock_Controller:u_control|entered_pass~9                      ; 1       ;
 ; Lock_Controller:u_control|entered_pass~8                      ; 1       ;
-; Lock_Controller:u_control|entered_pass~7                      ; 1       ;
-; Lock_Controller:u_control|entered_pass~6                      ; 1       ;
-; Lock_Controller:u_control|entered_pass~5                      ; 1       ;
-; Lock_Controller:u_control|entered_pass~4                      ; 1       ;
-; Lock_Controller:u_control|entered_pass[9]~2                   ; 1       ;
-; Lock_Controller:u_control|entered_pass~1                      ; 1       ;
-; Lock_Controller:u_control|state~23                            ; 1       ;
-; Lock_Controller:u_control|state~22                            ; 1       ;
-; Lock_Controller:u_control|wrong_count~4                       ; 1       ;
+; Lock_Controller:u_control|entered_pass[4]~6                   ; 1       ;
+; Lock_Controller:u_control|entered_pass[4]~5                   ; 1       ;
+; Lock_Controller:u_control|entered_pass[4]~4                   ; 1       ;
+; Lock_Controller:u_control|lcd_status[0]~12                    ; 1       ;
+; Lock_Controller:u_control|entered_pass~3                      ; 1       ;
+; Lock_Controller:u_control|state~28                            ; 1       ;
+; Lock_Controller:u_control|state~26                            ; 1       ;
+; Lock_Controller:u_control|state~24                            ; 1       ;
+; Lock_Controller:u_control|state~21                            ; 1       ;
+; Lock_Controller:u_control|wrong_count~6                       ; 1       ;
+; Lock_Controller:u_control|wrong_count~5                       ; 1       ;
 ; Lock_Controller:u_control|wrong_count~3                       ; 1       ;
-; Lock_Controller:u_control|wrong_count~0                       ; 1       ;
 ; Top_LCD:u_lcd_display|Add2~1                                  ; 1       ;
 ; Top_LCD:u_lcd_display|digit_count~0                           ; 1       ;
 ; Lock_Controller:u_control|update_digit~5                      ; 1       ;
@@ -1543,35 +1633,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; keypad_scanner:u_scanner|Mux9~1                               ; 1       ;
 ; keypad_scanner:u_scanner|Mux9~0                               ; 1       ;
 ; Top_LCD:u_lcd_display|Add2~0                                  ; 1       ;
-; Lock_Controller:u_control|lcd_status~11                       ; 1       ;
-; Lock_Controller:u_control|lcd_status~10                       ; 1       ;
-; Lock_Controller:u_control|lcd_status~9                        ; 1       ;
-; Lock_Controller:u_control|lcd_status~7                        ; 1       ;
 ; Lock_Controller:u_control|update_status~2                     ; 1       ;
 ; Lock_Controller:u_control|update_status~1                     ; 1       ;
 ; Lock_Controller:u_control|update_status~0                     ; 1       ;
-; Lock_Controller:u_control|LessThan4~7                         ; 1       ;
+; Lock_Controller:u_control|lcd_status~11                       ; 1       ;
+; Lock_Controller:u_control|lcd_status~10                       ; 1       ;
+; Lock_Controller:u_control|lcd_status~9                        ; 1       ;
+; Lock_Controller:u_control|LessThan4~6                         ; 1       ;
 ; Lock_Controller:u_control|LessThan4~5                         ; 1       ;
 ; Lock_Controller:u_control|LessThan4~4                         ; 1       ;
 ; Lock_Controller:u_control|LessThan4~3                         ; 1       ;
+; Lock_Controller:u_control|LessThan4~2                         ; 1       ;
 ; Lock_Controller:u_control|LessThan4~1                         ; 1       ;
-; Lock_Controller:u_control|LessThan3~6                         ; 1       ;
-; Lock_Controller:u_control|LessThan3~5                         ; 1       ;
-; Lock_Controller:u_control|LessThan3~4                         ; 1       ;
-; Lock_Controller:u_control|LessThan3~3                         ; 1       ;
-; Lock_Controller:u_control|LessThan3~2                         ; 1       ;
-; Lock_Controller:u_control|LessThan3~1                         ; 1       ;
-; Lock_Controller:u_control|lcd_status[2]~5                     ; 1       ;
-; Lock_Controller:u_control|lcd_status[2]~4                     ; 1       ;
-; Lock_Controller:u_control|lcd_status[2]~3                     ; 1       ;
-; Lock_Controller:u_control|lcd_status~2                        ; 1       ;
+; Lock_Controller:u_control|lcd_status[0]~5                     ; 1       ;
+; Lock_Controller:u_control|LessThan5~6                         ; 1       ;
+; Lock_Controller:u_control|LessThan5~5                         ; 1       ;
+; Lock_Controller:u_control|LessThan5~4                         ; 1       ;
+; Lock_Controller:u_control|LessThan5~3                         ; 1       ;
+; Lock_Controller:u_control|LessThan5~2                         ; 1       ;
+; Lock_Controller:u_control|LessThan5~1                         ; 1       ;
+; Lock_Controller:u_control|LessThan5~0                         ; 1       ;
+; Lock_Controller:u_control|lcd_status[0]~4                     ; 1       ;
+; Lock_Controller:u_control|lcd_status[0]~1                     ; 1       ;
+; Lock_Controller:u_control|delay_timer[10]~0                   ; 1       ;
+; Lock_Controller:u_control|lcd_status~0                        ; 1       ;
 ; Lock_Controller:u_control|Equal1~9                            ; 1       ;
-; Lock_Controller:u_control|Equal1~8                            ; 1       ;
-; Lock_Controller:u_control|saved_pass[14]                      ; 1       ;
 ; Lock_Controller:u_control|saved_pass[15]                      ; 1       ;
-; Lock_Controller:u_control|Equal1~7                            ; 1       ;
+; Lock_Controller:u_control|saved_pass[14]                      ; 1       ;
+; Lock_Controller:u_control|Equal1~8                            ; 1       ;
 ; Lock_Controller:u_control|saved_pass[13]                      ; 1       ;
 ; Lock_Controller:u_control|saved_pass[12]                      ; 1       ;
+; Lock_Controller:u_control|Equal1~7                            ; 1       ;
 ; Lock_Controller:u_control|Equal1~6                            ; 1       ;
 ; Lock_Controller:u_control|saved_pass[11]                      ; 1       ;
 ; Lock_Controller:u_control|saved_pass[10]                      ; 1       ;
@@ -1593,20 +1685,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Lock_Controller:u_control|saved_pass[1]                       ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|oReady~0           ; 1       ;
 ; Top_LCD:u_lcd_display|refresh_tick~0                          ; 1       ;
+; Top_LCD:u_lcd_display|Selector0~3                             ; 1       ;
 ; Top_LCD:u_lcd_display|Selector0~2                             ; 1       ;
 ; Top_LCD:u_lcd_display|Selector0~1                             ; 1       ;
-; Top_LCD:u_lcd_display|Selector3~0                             ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[6][5]~23                   ; 1       ;
+; Top_LCD:u_lcd_display|Selector3~1                             ; 1       ;
+; Top_LCD:u_lcd_display|WideOr7~0                               ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer~23                         ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer~22                         ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer~21                         ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer~20                         ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[6][5]~20                   ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer~19                         ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer~18                         ; 1       ;
+; Top_LCD:u_lcd_display|WideOr2~0                               ; 1       ;
+; Top_LCD:u_lcd_display|WideOr4~0                               ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer~16                         ; 1       ;
+; Top_LCD:u_lcd_display|WideOr1~0                               ; 1       ;
+; Top_LCD:u_lcd_display|Decoder1~3                              ; 1       ;
+; Top_LCD:u_lcd_display|Decoder1~2                              ; 1       ;
+; Top_LCD:u_lcd_display|WideOr6~0                               ; 1       ;
+; Top_LCD:u_lcd_display|WideOr3~0                               ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer~7                          ; 1       ;
-; Lock_Controller:u_control|lcd_status[0]                       ; 1       ;
-; Lock_Controller:u_control|lcd_status[1]                       ; 1       ;
-; Lock_Controller:u_control|lcd_status[2]                       ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer~2                          ; 1       ;
+; Top_LCD:u_lcd_display|Decoder3~0                              ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer~1                          ; 1       ;
+; Top_LCD:u_lcd_display|WideOr5~0                               ; 1       ;
+; Top_LCD:u_lcd_display|Decoder1~0                              ; 1       ;
 ; Top_LCD:u_lcd_display|Selector9~2                             ; 1       ;
 ; Top_LCD:u_lcd_display|Selector1~1                             ; 1       ;
 ; Top_LCD:u_lcd_display|Selector1~0                             ; 1       ;
@@ -1616,84 +1719,89 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|Selector12~1       ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SEND_HOLD    ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|Selector12~0       ; 1       ;
-; Top_LCD:u_lcd_display|Mux8~2                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux8~1                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux9~2                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux9~1                                  ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[8][6]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[9][6]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux8~0                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux9~0                                  ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[6][6]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[7][6]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~27                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~26                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~25                                 ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~13                          ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~12                          ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~10                          ; 1       ;
-; Top_LCD:u_lcd_display|Mux10~2                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux10~1                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux10~0                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~14                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~13                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~12                                 ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[4][6]                      ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[3][6]                      ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~20                          ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~19                          ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~17                          ; 1       ;
+; Top_LCD:u_lcd_display|Mux11~2                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux11~1                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux11~0                                 ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[8][4]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[9][4]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[6][4]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[7][4]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~24                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~23                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~22                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~20                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~10                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~9                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~8                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~7                                  ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[6][3]                      ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[7][3]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~6                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~5                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~4                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~3                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~2                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux3~1                                  ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[8][3]                      ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[9][3]                      ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~9                           ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~8                           ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~11                                 ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~16                          ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~15                          ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~14                          ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[1][3]                      ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~13                          ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][3]                      ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[2][3]                      ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~12                          ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~11                          ; 1       ;
 ; Top_LCD:u_lcd_display|Mux12~1                                 ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[9][2]                      ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[6][3]                      ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[8][3]                      ; 1       ;
 ; Top_LCD:u_lcd_display|Mux12~0                                 ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[7][3]                      ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[9][3]                      ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~10                          ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~9                           ; 1       ;
+; Top_LCD:u_lcd_display|lcd_data_in~7                           ; 1       ;
+; Top_LCD:u_lcd_display|Mux13~1                                 ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[9][2]                      ; 1       ;
+; Top_LCD:u_lcd_display|Mux13~0                                 ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[6][2]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[7][2]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[8][2]                      ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~7                           ; 1       ;
 ; Top_LCD:u_lcd_display|lcd_data_in~6                           ; 1       ;
 ; Top_LCD:u_lcd_display|lcd_data_in~5                           ; 1       ;
-; Top_LCD:u_lcd_display|WideOr0~0                               ; 1       ;
-; Top_LCD:u_lcd_display|lcd_data_in~4                           ; 1       ;
-; Top_LCD:u_lcd_display|Mux13~4                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux13~3                                 ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[8][1]                      ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[9][1]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux13~2                                 ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[6][1]                      ; 1       ;
-; Top_LCD:u_lcd_display|line2_buffer[7][1]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~19                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~18                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~17                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~16                                 ; 1       ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|Selector10~0       ; 1       ;
-; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SET_POS_HOLD ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][2]                      ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[1][2]                      ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[2][2]                      ; 1       ;
 ; Top_LCD:u_lcd_display|Mux14~4                                 ; 1       ;
 ; Top_LCD:u_lcd_display|Mux14~3                                 ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[8][1]                      ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[9][1]                      ; 1       ;
 ; Top_LCD:u_lcd_display|Mux14~2                                 ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[6][1]                      ; 1       ;
+; Top_LCD:u_lcd_display|line2_buffer[7][1]                      ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~10                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~9                                  ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[4][1]                      ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~7                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~6                                  ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[0][1]                      ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[1][1]                      ; 1       ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|Selector10~0       ; 1       ;
+; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state.SET_POS_HOLD ; 1       ;
+; Top_LCD:u_lcd_display|Mux15~4                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux15~3                                 ; 1       ;
+; Top_LCD:u_lcd_display|Mux15~2                                 ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[8][0]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[9][0]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[6][0]                      ; 1       ;
 ; Top_LCD:u_lcd_display|line2_buffer[7][0]                      ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~13                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~12                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~11                                 ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~9                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~8                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~7                                  ; 1       ;
-; Top_LCD:u_lcd_display|Mux6~4                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~5                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~4                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~3                                  ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~2                                  ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[3][0]                      ; 1       ;
+; Top_LCD:u_lcd_display|Mux7~1                                  ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[1][0]                      ; 1       ;
+; Top_LCD:u_lcd_display|line1_buffer[8][6]                      ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|state~21           ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|count[1]~2         ; 1       ;
 ; Top_LCD:u_lcd_display|LCD_Controller:u_lcd|count[0]~1         ; 1       ;
@@ -1737,72 +1845,120 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; keypad_scanner:u_scanner|row[2]                               ; 1       ;
 ; keypad_scanner:u_scanner|row[1]                               ; 1       ;
 ; keypad_scanner:u_scanner|row[0]                               ; 1       ;
-; Lock_Controller:u_control|delay_timer[29]~90                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[28]~88                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[28]~87                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[27]~86                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[27]~85                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[26]~84                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[26]~83                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[25]~82                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[25]~81                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[24]~80                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[24]~79                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[23]~78                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[23]~77                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[22]~76                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[22]~75                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[21]~74                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[21]~73                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[20]~72                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[20]~71                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[19]~70                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[19]~69                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[18]~68                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[18]~67                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[17]~66                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[17]~65                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[16]~64                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[16]~63                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[15]~62                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[15]~61                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[14]~60                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[14]~59                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[13]~58                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[13]~57                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[12]~56                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[12]~55                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[11]~54                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[11]~53                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[10]~52                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[10]~51                  ; 1       ;
-; Lock_Controller:u_control|delay_timer[9]~50                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[9]~49                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[8]~48                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[8]~47                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[7]~46                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[7]~45                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[6]~44                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[6]~43                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[5]~42                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[5]~41                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[4]~40                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[4]~39                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[3]~38                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[3]~37                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[2]~36                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[2]~35                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[1]~34                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[1]~33                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[0]~32                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[0]~31                   ; 1       ;
-; Lock_Controller:u_control|delay_timer[0]                      ; 1       ;
-; Lock_Controller:u_control|delay_timer[1]                      ; 1       ;
-; Lock_Controller:u_control|delay_timer[2]                      ; 1       ;
-; Lock_Controller:u_control|delay_timer[3]                      ; 1       ;
-; Lock_Controller:u_control|delay_timer[4]                      ; 1       ;
-; Lock_Controller:u_control|delay_timer[5]                      ; 1       ;
-; Lock_Controller:u_control|delay_timer[6]                      ; 1       ;
+; Lock_Controller:u_control|debounce_timer[24]~73               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[23]~72               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[23]~71               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[22]~70               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[22]~69               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[21]~68               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[21]~67               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[20]~66               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[20]~65               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[19]~64               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[19]~63               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[18]~62               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[18]~61               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[17]~60               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[17]~59               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[16]~58               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[16]~57               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[15]~56               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[15]~55               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[14]~54               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[14]~53               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[13]~52               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[13]~51               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[12]~50               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[12]~49               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[11]~48               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[11]~47               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[10]~46               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[10]~45               ; 1       ;
+; Lock_Controller:u_control|debounce_timer[9]~44                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[9]~43                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[8]~42                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[8]~41                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[7]~40                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[7]~39                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[6]~38                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[6]~37                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[5]~36                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[5]~35                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[4]~34                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[4]~33                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[3]~32                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[3]~31                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[2]~30                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[2]~29                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[1]~28                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[1]~27                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[0]~26                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[0]~25                ; 1       ;
+; Lock_Controller:u_control|debounce_timer[0]                   ; 1       ;
+; Lock_Controller:u_control|debounce_timer[1]                   ; 1       ;
+; Lock_Controller:u_control|debounce_timer[2]                   ; 1       ;
+; Lock_Controller:u_control|debounce_timer[3]                   ; 1       ;
+; Lock_Controller:u_control|debounce_timer[4]                   ; 1       ;
+; Lock_Controller:u_control|debounce_timer[5]                   ; 1       ;
+; Lock_Controller:u_control|Add3~65                             ; 1       ;
+; Lock_Controller:u_control|Add3~57                             ; 1       ;
+; Lock_Controller:u_control|Add3~56                             ; 1       ;
+; Lock_Controller:u_control|Add3~55                             ; 1       ;
+; Lock_Controller:u_control|Add3~54                             ; 1       ;
+; Lock_Controller:u_control|Add3~53                             ; 1       ;
+; Lock_Controller:u_control|Add3~52                             ; 1       ;
+; Lock_Controller:u_control|Add3~51                             ; 1       ;
+; Lock_Controller:u_control|Add3~50                             ; 1       ;
+; Lock_Controller:u_control|Add3~49                             ; 1       ;
+; Lock_Controller:u_control|Add3~48                             ; 1       ;
+; Lock_Controller:u_control|Add3~47                             ; 1       ;
+; Lock_Controller:u_control|Add3~46                             ; 1       ;
+; Lock_Controller:u_control|Add3~45                             ; 1       ;
+; Lock_Controller:u_control|Add3~44                             ; 1       ;
+; Lock_Controller:u_control|Add3~43                             ; 1       ;
+; Lock_Controller:u_control|Add3~42                             ; 1       ;
+; Lock_Controller:u_control|Add3~41                             ; 1       ;
+; Lock_Controller:u_control|Add3~40                             ; 1       ;
+; Lock_Controller:u_control|Add3~39                             ; 1       ;
+; Lock_Controller:u_control|Add3~38                             ; 1       ;
+; Lock_Controller:u_control|Add3~37                             ; 1       ;
+; Lock_Controller:u_control|Add3~36                             ; 1       ;
+; Lock_Controller:u_control|Add3~35                             ; 1       ;
+; Lock_Controller:u_control|Add3~34                             ; 1       ;
+; Lock_Controller:u_control|Add3~33                             ; 1       ;
+; Lock_Controller:u_control|Add3~32                             ; 1       ;
+; Lock_Controller:u_control|Add3~31                             ; 1       ;
+; Lock_Controller:u_control|Add3~30                             ; 1       ;
+; Lock_Controller:u_control|Add3~29                             ; 1       ;
+; Lock_Controller:u_control|Add3~28                             ; 1       ;
+; Lock_Controller:u_control|Add3~27                             ; 1       ;
+; Lock_Controller:u_control|Add3~26                             ; 1       ;
+; Lock_Controller:u_control|Add3~25                             ; 1       ;
+; Lock_Controller:u_control|Add3~24                             ; 1       ;
+; Lock_Controller:u_control|Add3~23                             ; 1       ;
+; Lock_Controller:u_control|Add3~22                             ; 1       ;
+; Lock_Controller:u_control|Add3~21                             ; 1       ;
+; Lock_Controller:u_control|Add3~20                             ; 1       ;
+; Lock_Controller:u_control|Add3~19                             ; 1       ;
+; Lock_Controller:u_control|Add3~18                             ; 1       ;
+; Lock_Controller:u_control|Add3~17                             ; 1       ;
+; Lock_Controller:u_control|Add3~16                             ; 1       ;
+; Lock_Controller:u_control|Add3~15                             ; 1       ;
+; Lock_Controller:u_control|Add3~14                             ; 1       ;
+; Lock_Controller:u_control|Add3~13                             ; 1       ;
+; Lock_Controller:u_control|Add3~12                             ; 1       ;
+; Lock_Controller:u_control|Add3~11                             ; 1       ;
+; Lock_Controller:u_control|Add3~10                             ; 1       ;
+; Lock_Controller:u_control|Add3~9                              ; 1       ;
+; Lock_Controller:u_control|Add3~8                              ; 1       ;
+; Lock_Controller:u_control|Add3~7                              ; 1       ;
+; Lock_Controller:u_control|Add3~6                              ; 1       ;
+; Lock_Controller:u_control|Add3~5                              ; 1       ;
+; Lock_Controller:u_control|Add3~4                              ; 1       ;
+; Lock_Controller:u_control|Add3~3                              ; 1       ;
+; Lock_Controller:u_control|Add3~2                              ; 1       ;
+; Lock_Controller:u_control|Add3~1                              ; 1       ;
+; Lock_Controller:u_control|Add3~0                              ; 1       ;
 ; Top_LCD:u_lcd_display|char_idx[4]~15                          ; 1       ;
 ; Top_LCD:u_lcd_display|char_idx[3]~14                          ; 1       ;
 ; Top_LCD:u_lcd_display|char_idx[3]~13                          ; 1       ;
@@ -1901,156 +2057,158 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 473 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 5 / 3,315 ( < 1 % )    ;
-; C4 interconnects            ; 142 / 60,840 ( < 1 % ) ;
-; Direct links                ; 163 / 94,460 ( < 1 % ) ;
+; Block interconnects         ; 573 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 10 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 260 / 60,840 ( < 1 % ) ;
+; Direct links                ; 170 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 4 / 16 ( 25 % )        ;
-; Local interconnects         ; 264 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 24 / 3,091 ( < 1 % )   ;
-; R4 interconnects            ; 270 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 301 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 25 / 3,091 ( < 1 % )   ;
+; R4 interconnects            ; 242 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 11.97) ; Number of LABs  (Total = 33) ;
+; Number of Logic Elements  (Average = 12.26) ; Number of LABs  (Total = 39) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 4                            ;
-; 2                                           ; 1                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 2                            ;
 ; 3                                           ; 1                            ;
 ; 4                                           ; 1                            ;
-; 5                                           ; 0                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 0                            ;
+; 5                                           ; 1                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 2                            ;
 ; 8                                           ; 2                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 1                            ;
-; 12                                          ; 1                            ;
+; 9                                           ; 2                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 2                            ;
 ; 13                                          ; 1                            ;
-; 14                                          ; 2                            ;
-; 15                                          ; 2                            ;
-; 16                                          ; 17                           ;
+; 14                                          ; 3                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 19                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.70) ; Number of LABs  (Total = 33) ;
+; LAB-wide Signals  (Average = 1.87) ; Number of LABs  (Total = 39) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 9                            ;
-; 1 Clock                            ; 23                           ;
-; 1 Clock enable                     ; 12                           ;
-; 1 Sync. clear                      ; 4                            ;
-; 1 Sync. load                       ; 2                            ;
-; 2 Clock enables                    ; 2                            ;
-; 2 Clocks                           ; 4                            ;
+; 1 Async. clear                     ; 12                           ;
+; 1 Clock                            ; 30                           ;
+; 1 Clock enable                     ; 11                           ;
+; 1 Sync. clear                      ; 3                            ;
+; 1 Sync. load                       ; 3                            ;
+; 2 Clock enables                    ; 8                            ;
+; 2 Clocks                           ; 6                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 18.06) ; Number of LABs  (Total = 33) ;
+; Number of Signals Sourced  (Average = 18.62) ; Number of LABs  (Total = 39) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 3                            ;
-; 2                                            ; 2                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 1                            ;
 ; 3                                            ; 1                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 1                            ;
-; 6                                            ; 0                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 1                            ;
 ; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 4                            ;
-; 19                                           ; 1                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 2                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 2                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 2                            ;
 ; 20                                           ; 3                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 1                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 2                            ;
-; 29                                           ; 2                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 3                            ;
+; 25                                           ; 3                            ;
+; 26                                           ; 2                            ;
+; 27                                           ; 1                            ;
+; 28                                           ; 4                            ;
+; 29                                           ; 1                            ;
 ; 30                                           ; 2                            ;
-; 31                                           ; 3                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.97) ; Number of LABs  (Total = 33) ;
+; Number of Signals Sourced Out  (Average = 7.95) ; Number of LABs  (Total = 39) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
+; 1                                               ; 1                            ;
 ; 2                                               ; 2                            ;
-; 3                                               ; 3                            ;
-; 4                                               ; 1                            ;
-; 5                                               ; 2                            ;
+; 3                                               ; 5                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 4                            ;
 ; 6                                               ; 1                            ;
-; 7                                               ; 5                            ;
-; 8                                               ; 1                            ;
+; 7                                               ; 4                            ;
+; 8                                               ; 4                            ;
 ; 9                                               ; 3                            ;
 ; 10                                              ; 2                            ;
-; 11                                              ; 0                            ;
+; 11                                              ; 3                            ;
 ; 12                                              ; 0                            ;
 ; 13                                              ; 2                            ;
-; 14                                              ; 2                            ;
-; 15                                              ; 0                            ;
-; 16                                              ; 3                            ;
-; 17                                              ; 2                            ;
+; 14                                              ; 1                            ;
+; 15                                              ; 4                            ;
+; 16                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 12.97) ; Number of LABs  (Total = 33) ;
+; Number of Distinct Inputs  (Average = 13.62) ; Number of LABs  (Total = 39) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 4                            ;
-; 4                                            ; 4                            ;
+; 3                                            ; 2                            ;
+; 4                                            ; 0                            ;
 ; 5                                            ; 2                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
+; 6                                            ; 6                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 3                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 4                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 1                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 3                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 1                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 3                            ;
 ; 18                                           ; 1                            ;
 ; 19                                           ; 0                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 1                            ;
+; 20                                           ; 3                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 2                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 3                            ;
-; 26                                           ; 1                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
 ; 27                                           ; 1                            ;
-; 28                                           ; 2                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 1                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2124,10 +2282,10 @@ Info (176353): Automatically promoted node KEY[0] (placed in PIN N25 (CLK4, LVDS
         Info (176357): Destination node Top_LCD:u_lcd_display|LCD_Controller:u_lcd|LCD_DATA[0]~4
         Info (176357): Destination node Top_LCD:u_lcd_display|lcd_col[0]~0
         Info (176357): Destination node Lock_Controller:u_control|always1~0
-        Info (176357): Destination node Lock_Controller:u_control|wrong_count~0
+        Info (176357): Destination node Lock_Controller:u_control|delay_timer[10]~0
         Info (176357): Destination node Lock_Controller:u_control|wrong_count~2
-        Info (176357): Destination node Lock_Controller:u_control|entered_pass[9]~0
-        Info (176357): Destination node Lock_Controller:u_control|state~30
+        Info (176357): Destination node Lock_Controller:u_control|wrong_count~5
+        Info (176357): Destination node Lock_Controller:u_control|delay_timer[10]~1
         Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -2140,19 +2298,19 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "HEX0[4]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX0[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX0[6]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:12
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X22_Y24 to location X32_Y36
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X33_Y12 to location X43_Y23
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.41 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.98 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 16 output pins without output pin load capacitance assignment
     Info (306007): Pin "ROW[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2174,15 +2332,15 @@ Warning (306006): Found 16 output pins without output pin load capacitance assig
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/output_files/Do_an.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Thu May 07 10:25:41 2026
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Tue May 12 13:27:25 2026
+    Info: Elapsed time: 00:01:10
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+

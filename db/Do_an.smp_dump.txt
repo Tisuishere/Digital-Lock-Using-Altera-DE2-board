@@ -17,8 +17,8 @@ state.SEND 0 1 0 0 0 0 1
 state.SEND_HOLD 1 0 0 0 0 0 1 
 
 State Machine - |Lock_System_Top|Lock_Controller:u_control|state
-Name state.S3_NEW_PASS state.S2_LOCK_PENALTY state.S1_UNLOCK state.S0_ENTER_PASS state.S4_WRONG 
-state.S0_ENTER_PASS 0 0 0 0 0 
+Name state.S3_NEW_PASS state.S2_LOCK_PENALTY state.S1_UNLOCK state.000 state.S4_WRONG 
+state.000 0 0 0 0 0 
 state.S1_UNLOCK 0 0 1 1 0 
 state.S2_LOCK_PENALTY 0 1 0 1 0 
 state.S3_NEW_PASS 1 0 0 1 0 

@@ -102,40 +102,22 @@ module Top_LCD (
     // ==========================================
     // 5. ĐỊNH NGHĨA CHUỖI KÝ TỰ DÒNG 1
     // ==========================================
-   // Trích đoạn thay đổi quan trọng trong Top_LCD.v
-    integer i;
-    always @(posedge CLOCK_50 or negedge reset_n) begin
-        if (!reset_n) begin
-            for (i=0; i<16; i=i+1) line1_buffer[i] <= " ";
-        end else if (btn_status_pressed || refresh_tick) begin
-            // Xóa trắng toàn bộ dòng trước khi nạp chuỗi mới để tránh ký tự rác
-            for (i=0; i<16; i=i+1) line1_buffer[i] <= " ";
-            
-            case (STATUS_IN) // Sử dụng trực tiếp STATUS_IN để cập nhật nhanh
-                3'd0: begin 
-                    line1_buffer[0]<="E"; line1_buffer[1]<="n"; line1_buffer[2]<="t"; 
-                    line1_buffer[3]<="e"; line1_buffer[4]<="r"; line1_buffer[5]<=" "; 
-                    line1_buffer[6]<="p"; line1_buffer[7]<="a"; line1_buffer[8]<="s"; line1_buffer[9]<="s"; 
-                end
-                3'd1: begin 
-                    line1_buffer[0]<="U"; line1_buffer[1]<="n"; line1_buffer[2]<="l"; 
-                    line1_buffer[3]<="o"; line1_buffer[4]<="c"; line1_buffer[5]<="k"; 
-                end
-                3'd2: begin 
-                    line1_buffer[0]<="L"; line1_buffer[1]<="o"; line1_buffer[2]<="c"; line1_buffer[3]<="k"; 
-                end
-                3'd3: begin 
-                    line1_buffer[0]<="N"; line1_buffer[1]<="e"; line1_buffer[2]<="w"; line1_buffer[3]<=" "; 
-                    line1_buffer[4]<="p"; line1_buffer[5]<="a"; line1_buffer[6]<="s"; line1_buffer[7]<="s"; 
-                end
-                3'd4: begin 
-                    line1_buffer[0]<="W"; line1_buffer[1]<="r"; line1_buffer[2]<="o"; line1_buffer[3]<="n"; line1_buffer[4]<="g"; 
-                end
-                default: begin 
-                    line1_buffer[0]<="I"; line1_buffer[1]<="d"; line1_buffer[2]<="l"; line1_buffer[3]<="e"; 
-                end
-            endcase
-        end
+    always @(*) begin
+        // Xóa trắng buffer trước khi ghi để tránh ký tự rác
+        line1_buffer[0]=" "; line1_buffer[1]=" "; line1_buffer[2]=" "; line1_buffer[3]=" "; 
+        line1_buffer[4]=" "; line1_buffer[5]=" "; line1_buffer[6]=" "; line1_buffer[7]=" "; 
+        line1_buffer[8]=" "; line1_buffer[9]=" "; line1_buffer[10]=" "; line1_buffer[11]=" "; 
+        line1_buffer[12]=" "; line1_buffer[13]=" "; line1_buffer[14]=" "; line1_buffer[15]=" ";
+        
+        case (status_reg)
+            3'd0: begin line1_buffer[0]="E"; line1_buffer[1]="n"; line1_buffer[2]="t"; line1_buffer[3]="e"; line1_buffer[4]="r"; line1_buffer[5]=" "; line1_buffer[6]="p"; line1_buffer[7]="a"; line1_buffer[8]="s"; line1_buffer[9]="s"; end
+            3'd1: begin line1_buffer[0]="U"; line1_buffer[1]="n"; line1_buffer[2]="l"; line1_buffer[3]="o"; line1_buffer[4]="c"; line1_buffer[5]="k"; end
+            3'd2: begin line1_buffer[0]="L"; line1_buffer[1]="o"; line1_buffer[2]="c"; line1_buffer[3]="k"; end
+            3'd3: begin line1_buffer[0]="N"; line1_buffer[1]="e"; line1_buffer[2]="w"; line1_buffer[3]=" "; line1_buffer[4]="p"; line1_buffer[5]="a"; line1_buffer[6]="s"; line1_buffer[7]="s"; end
+            3'd4: begin line1_buffer[0]="W"; line1_buffer[1]="r"; line1_buffer[2]="o"; line1_buffer[3]="n"; line1_buffer[4]="g"; end
+            3'd5: begin line1_buffer[0]="C"; line1_buffer[1]="o"; line1_buffer[2]="r"; line1_buffer[3]="r"; line1_buffer[4]="e"; line1_buffer[5]="c"; line1_buffer[6]="t"; end
+            default: begin line1_buffer[0]="I"; line1_buffer[1]="d"; line1_buffer[2]="l"; line1_buffer[3]="e"; end
+        endcase
     end
 
     // ==========================================
