@@ -1,0 +1,71 @@
+C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/LCD_Controller.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/LCD_Controller.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LCD_Controller
+
+Top level modules:
+	LCD_Controller
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/hex_decoder.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/hex_decoder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module hex_decoder
+
+Top level modules:
+	hex_decoder
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Top_LCD.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Top_LCD.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_Top_LCD
+
+Top level modules:
+	tb_Top_LCD
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_System_Top.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_System_Top.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Lock_System_Top
+
+Top level modules:
+	Lock_System_Top
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/keypad_scanner.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/keypad_scanner.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module keypad_scanner
+
+Top level modules:
+	keypad_scanner
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_Controller.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_Controller.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Lock_Controller
+
+Top level modules:
+	Lock_Controller
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/clk_divider.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/clk_divider.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module clk_divider
+
+Top level modules:
+	clk_divider
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_keypad_scanner.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_keypad_scanner.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_keypad_scanner
+
+Top level modules:
+	tb_keypad_scanner
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Top_LCD.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Top_LCD.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Top_LCD
+
+Top level modules:
+	Top_LCD
+
+} {} {}} C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Lock_Controller.v {1 {vlog -work work C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Lock_Controller.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_Lock_Controller
+
+Top level modules:
+	tb_Lock_Controller
+
+} {} {}}

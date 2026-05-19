@@ -1,0 +1,32 @@
+
+`timescale 1ms/1us
+module tb_keypad_scanner();
+    reg clk;
+    reg [3:0] col;
+    wire [3:0] row;
+    wire [3:0] data_out;
+    wire valid;
+
+    keypad_scanner uut (
+        .clk(clk), .col(col), .row(row), 
+        .data_out(data_out), .valid(valid)
+    );
+
+    always #0.5 clk = ~clk; // Xung clock 1kHz (T = 1ms)
+
+    initial begin
+        clk = 0; 
+        col = 4'b1111; // Mac dinh khong nhan phim
+        
+        $display("--- BAT DAU TEST KEYPAD ---");
+        
+        // Gia lap nhan phim '0'
+        wait(row == 4'b1110); // Cho mach quet den Hang 0
+        col = 4'b1101;        // Keo Cot 1 xuong (Phim '0')
+        #5;                   // Giu phim trong 5ms
+        
+        col = 4'b1111;        // Nha phim
+        #10;
+        $stop;
+    end
+endmodule

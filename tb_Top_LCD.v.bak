@@ -1,0 +1,65 @@
+`timescale 1ns/1ps
+module tb_Top_LCD();
+    reg CLOCK_50;
+    reg [3:0] PASS_IN;
+    reg [2:0] STATUS_IN;
+    reg [2:0] KEY;
+    
+    wire [7:0] LCD_DATA;
+    wire LCD_RW, LCD_EN, LCD_RS, LCD_ON;
+
+    Top_LCD uut (
+        .CLOCK_50(CLOCK_50), .PASS_IN(PASS_IN), .STATUS_IN(STATUS_IN),
+        .KEY(KEY), .LCD_DATA(LCD_DATA), .LCD_RW(LCD_RW), 
+        .LCD_EN(LCD_EN), .LCD_RS(LCD_RS), .LCD_ON(LCD_ON)
+    );
+
+    always #10 CLOCK_50 = ~CLOCK_50; // Xung 50MHz
+
+    // Task gi? l?p tín hi?u update_digit t? Lock_Controller
+    task lcd_input_digit(input [3:0] digit);
+        begin
+            @(negedge CLOCK_50);
+            PASS_IN = digit;
+            KEY[1] = 0; // Trigger nhap so (Active-low)
+            #40; 
+            KEY[1] = 1;
+            #2000; // Cho LCD Controller quet hien thi xong
+        end
+    endtask
+
+    // Task gi? l?p tín hi?u update_status t? Lock_Controller
+    task lcd_change_status(input [2:0] new_status);
+        begin
+            @(negedge CLOCK_50);
+            STATUS_IN = new_status;
+            KEY[2] = 0; // Trigger doi trang thai
+            #40; 
+            KEY[2] = 1;
+            #5000; // Cho LCD quet xoa mang va in chuoi moi
+        end
+    endtask
+
+    initial begin
+        CLOCK_50 = 0; KEY = 3'b111; PASS_IN = 0; STATUS_IN = 0;
+        
+        $display("--- KHOI DONG MAN HINH ---");
+        #20 KEY[0] = 0; #20 KEY[0] = 1; 
+        #2000;
+        
+        $display("--- TEST NHAP DAY SO (DONG 2) ---");
+        lcd_input_digit(4'h1); // Hien thi: Pass: 1
+        lcd_input_digit(4'h2); // Hien thi: Pass: 12
+        lcd_input_digit(4'h3); // Hien thi: Pass: 123
+        lcd_input_digit(4'h4); // Hien thi: Pass: 1234
+        
+        $display("--- TEST CHUYEN TRANG THAI (DONG 1) ---");
+        lcd_change_status(3'd1); // Chuyen sang UNLOCK
+        lcd_change_status(3'd3); // Chuyen sang NEW PASS
+        lcd_change_status(3'd4); // Chuyen sang WRONG
+        lcd_change_status(3'd0); // Ve lai ENTER PASS
+        
+        $display("--- KET THUC TEST ---");
+        $stop;
+    end
+endmodule

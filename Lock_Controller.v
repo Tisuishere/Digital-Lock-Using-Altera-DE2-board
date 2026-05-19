@@ -23,13 +23,13 @@ module Lock_Controller (
     localparam S3_NEW_PASS     = 3'd3;
     localparam S4_WRONG        = 3'd4;
 
-    localparam [29:0] TIME_3S  = 30'd150_000_000;
-    localparam [29:0] TIME_15S = 30'd750_000_000;
+    localparam [29:0] TIME_3S  = 30'd10;
+    localparam [29:0] TIME_15S = 30'd20;
 
     // --- Bộ chống dội phím (Debounce 0.5s) ---
     reg valid_sync1, valid_sync2, valid_prev;
     wire valid_key_action;
-    localparam [24:0] DEBOUNCE_TIME = 25'd25_000_000; 
+    localparam [24:0] DEBOUNCE_TIME = 25'd5; 
     reg [24:0] debounce_timer = 0;
     reg input_locked = 0;
 

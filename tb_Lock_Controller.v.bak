@@ -1,0 +1,44 @@
+`timescale 1ns/1ps
+module tb_Lock_Controller();
+    reg CLOCK_50, reset_n, key_valid;
+    reg [3:0] key_data;
+    wire [2:0] lcd_status;
+    wire update_digit, update_status;
+
+    Lock_Controller uut (
+        .CLOCK_50(CLOCK_50), .reset_n(reset_n),
+        .key_data(key_data), .key_valid(key_valid),
+        .lcd_status(lcd_status), .update_digit(update_digit),
+        .update_status(update_status)
+    );
+
+    always #10 CLOCK_50 = ~CLOCK_50;
+
+    // Task tu dong hoa viec nhan phim an toan
+    task press_key(input [3:0] val);
+        begin
+            @(negedge CLOCK_50); // Cho lech pha de tranh Race Condition
+            key_data = val;
+            key_valid = 1;
+            #60;                 // Giu phim 3 chu ky clock
+            key_valid = 0;
+            #300;                // Cho FSM xu ly
+        end
+    endtask
+
+    initial begin
+        CLOCK_50 = 0; reset_n = 1; key_valid = 0;
+        #15 reset_n = 0; #20 reset_n = 1; // Reset
+
+        $display("--- KICH BAN 1: NHAP DUNG MAT KHAU (0-0-0-0) ---");
+        press_key(4'h0); press_key(4'h0); press_key(4'h0); press_key(4'h0);
+        #200; // Cho mach chuyen sang S1_UNLOCK
+
+        $display("--- KICH BAN 2: KHOA CUA LAI (Bam #) ---");
+        press_key(4'hF);
+        #200; // Cho mach ve S0_ENTER_PASS
+
+        $display("--- KET THUC TEST ---");
+        $stop;
+    end
+endmodule

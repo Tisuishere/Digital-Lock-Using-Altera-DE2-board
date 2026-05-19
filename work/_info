@@ -1,0 +1,201 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vclk_divider
+Z1 !s100 6R_F^]MEfIVJBQ1=g<F7n2
+Z2 IFl]EWmgF`LzTA[94mifK42
+Z3 VmfC1lDOFB@31IVWX5ag=:0
+Z4 dC:\Users\tgiah\HDL\doan\Digital-Lock-Using-Altera-DE2-board
+Z5 w1777633992
+Z6 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/clk_divider.v
+Z7 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/clk_divider.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/clk_divider.v|
+Z10 o-work work -O0
+Z11 !s108 1779153799.287000
+Z12 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/clk_divider.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vhex_decoder
+Z13 !s100 8HNoj]ZV;Y4z[l2WG=UX?1
+Z14 InR8bEojK]ajPDB:MW9:?W2
+Z15 VMYdLhhzWjo1l>XHmgiV1I3
+R4
+R5
+Z16 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/hex_decoder.v
+Z17 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/hex_decoder.v
+L0 1
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/hex_decoder.v|
+R10
+Z19 !s108 1779153799.876000
+Z20 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/hex_decoder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vkeypad_scanner
+Z21 !s100 dSXCzQfZ2iKODgLMhO6WQ0
+Z22 IS5BZa]YDofFGnaL8Xe_kC3
+Z23 VC;U?=lelO_GfF3Gm?JM9O3
+R4
+R5
+Z24 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/keypad_scanner.v
+Z25 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/keypad_scanner.v
+L0 1
+R8
+r1
+31
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/keypad_scanner.v|
+R10
+Z27 !s108 1779153800.305000
+Z28 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/keypad_scanner.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vLCD_Controller
+Z29 !s100 VG[Be9Y5T1gEUK<WMP2g22
+Z30 IWDnm<f0JIIgd3]h10nPE]1
+Z31 Vm8enX22ESC:hib8k]J2;33
+R4
+Z32 w1778121535
+Z33 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/LCD_Controller.v
+Z34 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/LCD_Controller.v
+L0 1
+R8
+r1
+31
+Z35 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/LCD_Controller.v|
+R10
+Z36 n@l@c@d_@controller
+Z37 !s108 1779153800.735000
+Z38 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/LCD_Controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vLock_Controller
+Z39 !s100 VOBXIk2cZHGOgUe1dF5Pd2
+Z40 IG]TecH3?j5;kCjfE1HCii0
+Z41 V0^H9eHWDCDDRjF<L`3dBT0
+R4
+Z42 w1779152572
+Z43 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_Controller.v
+Z44 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_Controller.v
+L0 1
+R8
+r1
+31
+Z45 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_Controller.v|
+R10
+Z46 n@lock_@controller
+Z47 !s108 1779153801.101000
+Z48 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_Controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vLock_System_Top
+Z49 !s100 O4k?OAH`]1^jh7AX]@7=`0
+Z50 IaE>?bN<zbDRd:XkWFS3M;1
+Z51 VV[66^A[z33Q=>ogeSW9@V2
+R4
+Z52 w1777643926
+Z53 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_System_Top.v
+Z54 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_System_Top.v
+L0 1
+R8
+r1
+31
+Z55 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_System_Top.v|
+R10
+Z56 n@lock_@system_@top
+Z57 !s108 1779153801.432000
+Z58 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Lock_System_Top.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_keypad_scanner
+Z59 !s100 deochdK1mzQW0:QDRUUe;2
+Z60 Ii6HAJD?Bjni>[S_UoVQ1W1
+Z61 VW?9jCSPYoOTWY:jU4F;8b2
+R4
+Z62 w1779119496
+Z63 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_keypad_scanner.v
+Z64 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_keypad_scanner.v
+L0 2
+R8
+r1
+31
+Z65 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_keypad_scanner.v|
+R10
+Z66 !s108 1779153802.388000
+Z67 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_keypad_scanner.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_Lock_Controller
+!i10b 1
+Z68 !s100 lk?eEK9K14oO:LE^hlA5S1
+Z69 I_A2[9@TGj2BM0E:F;9m6J0
+Z70 Vf2`]iL:oPU?fm?@k8a1RH0
+R4
+Z71 w1779119495
+Z72 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Lock_Controller.v
+Z73 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Lock_Controller.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1779153805.182000
+!s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Lock_Controller.v|
+Z74 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Lock_Controller.v|
+!s101 -O0
+R10
+Z75 ntb_@lock_@controller
+vtb_Top_LCD
+Z76 Iji2CiAd5P=a2WVQ8KL`A62
+Z77 VRVgIn?5[6ZJhkhAeUA@kh0
+R4
+Z78 w1779153804
+Z79 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Top_LCD.v
+Z80 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Top_LCD.v
+L0 2
+R8
+r1
+31
+Z81 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Top_LCD.v|
+R10
+Z82 ntb_@top_@l@c@d
+!i10b 1
+Z83 !s100 0Ek0G]V=DSGGO8C`=ng]k2
+!s85 0
+Z84 !s108 1779153804.467000
+Z85 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/tb_Top_LCD.v|
+!s101 -O0
+vTop_LCD
+Z86 !s100 Sh[DURKF1J6bVjAc3DOWk2
+Z87 I1?4ZgRSTl16eC><4_I_T`3
+Z88 VF:QZUI3VDfIZ[0h3CzXB:1
+R4
+Z89 w1778334992
+Z90 8C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Top_LCD.v
+Z91 FC:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Top_LCD.v
+L0 1
+R8
+r1
+31
+Z92 !s90 -reportprogress|300|-work|work|C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Top_LCD.v|
+R10
+Z93 n@top_@l@c@d
+Z94 !s108 1779153801.780000
+Z95 !s107 C:/Users/tgiah/HDL/doan/Digital-Lock-Using-Altera-DE2-board/Top_LCD.v|
+!i10b 1
+!s85 0
+!s101 -O0
