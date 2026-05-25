@@ -1,24 +1,24 @@
 module keypad_scanner (
-    input wire clk,             // Xung clock 1kHz
-    input wire [3:0] col,       // Tín hiệu từ 4 cột của Keypad (Cần pull-up)
-    output reg [3:0] row,       // Tín hiệu kích cho 4 hàng của Keypad
-    output reg [3:0] data_out,  // Mã phím bấm (0-F)
-    output reg valid            // Cờ xác nhận có phím hợp lệ đang được nhấn
+    input wire clk,             
+    input wire [3:0] col,       
+    output reg [3:0] row,       
+    output reg [3:0] data_out,  
+    output reg valid            
 );
     reg [1:0] state = 0;
 
     always @(posedge clk) begin
         case (state)
-            // QUÉT HÀNG 0 (FPGA tưởng là hàng 0, nhưng thực tế dây Hàng 3 đang cắm ở đây)
+            // QUÉT HÀNG 0
             2'b00: begin
                 row <= 4'b1110; 
                 if (col != 4'b1111) begin
                     valid <= 1;
                     case (col)
-                        4'b1110: data_out <= 4'hE; // Nhấn * ra 1 -> Sửa thành E (Mã của *)
-                        4'b1101: data_out <= 4'h0; // Nhấn 0 ra 2 -> Sửa thành 0
-                        4'b1011: data_out <= 4'hF; // Nhấn # ra 3 -> Sửa thành F (Mã của #)
-                        4'b0111: data_out <= 4'hD; // Nhấn D ra A -> Sửa thành D
+                        4'b1110: data_out <= 4'hE; // E (Mã của *)
+                        4'b1101: data_out <= 4'h0; // 0
+                        4'b1011: data_out <= 4'hF; // F (Mã của #)
+                        4'b0111: data_out <= 4'hD; // D
                         default: data_out <= data_out;
                     endcase
                 end else begin
@@ -27,16 +27,16 @@ module keypad_scanner (
                 end
             end
             
-            // QUÉT HÀNG 1 (FPGA tưởng là hàng 1, nhưng thực tế dây Hàng 0 đang cắm ở đây)
+            // QUÉT HÀNG 1 
             2'b01: begin
                 row <= 4'b1101; 
                 if (col != 4'b1111) begin
                     valid <= 1;
                     case (col)
-                        4'b1110: data_out <= 4'h1; // Nhấn 1 ra 4 -> Sửa thành 1
-                        4'b1101: data_out <= 4'h2; // Nhấn 2 ra 5 -> Sửa thành 2
-                        4'b1011: data_out <= 4'h3; // Nhấn 3 ra 6 -> Sửa thành 3
-                        4'b0111: data_out <= 4'hA; // Nhấn A ra B -> Sửa thành A
+                        4'b1110: data_out <= 4'h1; // 1
+                        4'b1101: data_out <= 4'h2; // 2
+                        4'b1011: data_out <= 4'h3; // 3
+                        4'b0111: data_out <= 4'hA; // A
                         default: data_out <= data_out;
                     endcase
                 end else begin
@@ -45,16 +45,16 @@ module keypad_scanner (
                 end
             end
             
-            // QUÉT HÀNG 2 (FPGA tưởng là hàng 2, nhưng thực tế dây Hàng 1 đang cắm ở đây)
+            // QUÉT HÀNG 2 
             2'b10: begin
                 row <= 4'b1011; 
                 if (col != 4'b1111) begin
                     valid <= 1;
                     case (col)
-                        4'b1110: data_out <= 4'h4; // Nhấn 4 ra 7 -> Sửa thành 4
-                        4'b1101: data_out <= 4'h5; // Nhấn 5 ra 8 -> Sửa thành 5
-                        4'b1011: data_out <= 4'h6; // Nhấn 6 ra 9 -> Sửa thành 6
-                        4'b0111: data_out <= 4'hB; // Nhấn B ra C -> Sửa thành B
+                        4'b1110: data_out <= 4'h4; // 4
+                        4'b1101: data_out <= 4'h5; // 5
+                        4'b1011: data_out <= 4'h6; // 6
+                        4'b0111: data_out <= 4'hB; // B
                         default: data_out <= data_out;
                     endcase
                 end else begin
@@ -63,16 +63,16 @@ module keypad_scanner (
                 end
             end
             
-            // QUÉT HÀNG 3 (FPGA tưởng là hàng 3, nhưng thực tế dây Hàng 2 đang cắm ở đây)
+            // QUÉT HÀNG 3 
             2'b11: begin
                 row <= 4'b0111; 
                 if (col != 4'b1111) begin
                     valid <= 1;
                     case (col)
-                        4'b1110: data_out <= 4'h7; // Nhấn 7 ra E -> Sửa thành 7
-                        4'b1101: data_out <= 4'h8; // Nhấn 8 ra 0 -> Sửa thành 8
-                        4'b1011: data_out <= 4'h9; // Nhấn 9 ra F -> Sửa thành 9
-                        4'b0111: data_out <= 4'hC; // Nhấn C ra D -> Sửa thành C
+                        4'b1110: data_out <= 4'h7; // 7
+                        4'b1101: data_out <= 4'h8; // 8
+                        4'b1011: data_out <= 4'h9; // 9
+                        4'b0111: data_out <= 4'hC; // C
                         default: data_out <= data_out;
                     endcase
                 end else begin

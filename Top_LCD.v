@@ -1,9 +1,8 @@
 module Top_LCD (
     input            CLOCK_50,
-    input  [3:0]     PASS_IN,   // Dùng để nhập từng số của mật mã
-    input  [2:0]     STATUS_IN, // Dùng để chọn trạng thái hiển thị dòng 1
-    // ----------------------------
-    input  [2:0]     KEY,       // KEY[0]: Reset, KEY[1]: Nhập số, KEY[2]: Nạp Status
+    input  [3:0]     PASS_IN,   
+    input  [2:0]     STATUS_IN, 
+    input  [2:0]     KEY,       
     output [7:0]     LCD_DATA,
     output           LCD_RW,
     output           LCD_EN,
@@ -11,9 +10,6 @@ module Top_LCD (
     output           LCD_ON
 );
 
-    // ==========================================
-    // 1. KHAI BÁO BIẾN
-    // ==========================================
     wire reset_n;
     wire lcd_ready;
     wire btn_digit_pressed;
@@ -35,16 +31,10 @@ module Top_LCD (
     reg [4:0] char_idx;
     reg [1:0] disp_state;
 
-    // ==========================================
-    // 2. GÁN TÍN HIỆU & PHÁT HIỆN CẠNH
-    // ==========================================
     assign reset_n = KEY[0];
     assign btn_digit_pressed  = (btn_digit_prev  == 1'b1 && KEY[1] == 1'b0);
     assign btn_status_pressed = (btn_status_prev == 1'b1 && KEY[2] == 1'b0);
 
-    // ==========================================
-    // 3. GỌI MODULE LCD CONTROLLER
-    // ==========================================
     LCD_Controller u_lcd (
         .CLOCK_50(CLOCK_50), .reset_n(reset_n),
         .iValid(lcd_valid), .iRow(lcd_row), .iCol(lcd_col), .iData(lcd_data_in),
@@ -52,9 +42,6 @@ module Top_LCD (
         .LCD_EN(LCD_EN), .LCD_RS(LCD_RS), .LCD_ON(LCD_ON)
     );
 
-    // ==========================================
-    // 4. LOGIC XỬ LÝ NHẬP LIỆU
-    // ==========================================
     always @(posedge CLOCK_50 or negedge reset_n) begin
         if (!reset_n) begin
             btn_digit_prev  <= 1'b1;
@@ -74,44 +61,33 @@ module Top_LCD (
             btn_status_prev <= KEY[2];
             refresh_tick    <= 1'b0;
 
-            // Xử lý nạp trạng thái Dòng 1 bằng KEY[2]
             if (btn_status_pressed) begin
-                status_reg   <= STATUS_IN; // Đã thay SW[6:4] thành STATUS_IN
+                status_reg   <= STATUS_IN; 
                 refresh_tick <= 1'b1;
             end
-
-            // Xử lý nhập số Dòng 2 bằng KEY[1]
             if (btn_digit_pressed) begin
                 refresh_tick <= 1'b1;
                 if (digit_count < 4) begin
-                    // Đã thay SW[3:0] thành PASS_IN
                     line2_buffer[6 + digit_count] <= (PASS_IN < 10) ? (8'h30 + PASS_IN) : (8'h37 + PASS_IN);
                     digit_count <= digit_count + 1;
                 end else begin
-                    // Logic nhập số thứ 5: Xóa 4 số cũ, số mới nằm ở vị trí 1
                     line2_buffer[6] <= (PASS_IN < 10) ? (8'h30 + PASS_IN) : (8'h37 + PASS_IN);
                     line2_buffer[7] <= " "; 
                     line2_buffer[8] <= " "; 
                     line2_buffer[9] <= " ";
-                    digit_count <= 1; // Đặt lại đếm là 1
+                    digit_count <= 1; 
                 end
             end
         end
     end
 
-    // ==========================================
-    // 5. ĐỊNH NGHĨA CHUỖI KÝ TỰ DÒNG 1
-    // ==========================================
-   // Trích đoạn thay đổi quan trọng trong Top_LCD.v
     integer i;
     always @(posedge CLOCK_50 or negedge reset_n) begin
         if (!reset_n) begin
             for (i=0; i<16; i=i+1) line1_buffer[i] <= " ";
         end else if (btn_status_pressed || refresh_tick) begin
-            // Xóa trắng toàn bộ dòng trước khi nạp chuỗi mới để tránh ký tự rác
             for (i=0; i<16; i=i+1) line1_buffer[i] <= " ";
-            
-            case (STATUS_IN) // Sử dụng trực tiếp STATUS_IN để cập nhật nhanh
+            case (STATUS_IN) 
                 3'd0: begin 
                     line1_buffer[0]<="E"; line1_buffer[1]<="n"; line1_buffer[2]<="t"; 
                     line1_buffer[3]<="e"; line1_buffer[4]<="r"; line1_buffer[5]<=" "; 
@@ -138,9 +114,6 @@ module Top_LCD (
         end
     end
 
-    // ==========================================
-    // 6. FSM QUÉT HIỂN THỊ (GIỮ NGUYÊN)
-    // ==========================================
     always @(posedge CLOCK_50 or negedge reset_n) begin
         if (!reset_n) begin
             disp_state <= 0; char_idx <= 0; lcd_valid <= 0;

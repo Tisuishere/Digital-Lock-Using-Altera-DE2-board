@@ -26,7 +26,7 @@ module Lock_Controller (
     localparam [29:0] TIME_3S  = 30'd10;
     localparam [29:0] TIME_15S = 30'd20;
 
-    // --- Bộ chống dội phím (Debounce 0.5s) ---
+    // Chống dội phím
     reg valid_sync1, valid_sync2, valid_prev;
     wire valid_key_action;
     localparam [24:0] DEBOUNCE_TIME = 25'd5; 
@@ -48,12 +48,10 @@ module Lock_Controller (
     end
     assign valid_key_action = (valid_sync2 && !valid_prev && !input_locked);
 
-    // --- FSM ĐIỀU KHIỂN ---
     always @(posedge CLOCK_50) begin
         if (update_digit)  update_digit  <= 0;
         if (update_status) update_status <= 0;
 
-        // CẢI TIẾN: Reset về trạng thái ban đầu (Ngoại trừ khi đang bị phạt)
         if (!reset_n && state != S2_LOCK_PENALTY) begin
             state         <= S0_ENTER_PASS;
             lcd_status    <= S0_ENTER_PASS;
@@ -61,7 +59,7 @@ module Lock_Controller (
             wrong_count   <= 0;
             entered_pass  <= 0;
             delay_timer   <= 0;
-            update_status <= 1; // Kích hoạt làm mới LCD
+            update_status <= 1; 
         end else begin
             case (state)
                 S0_ENTER_PASS: begin
@@ -119,7 +117,7 @@ module Lock_Controller (
                         end
                         else if (key_data == 4'hE && digit_count == 4) begin
                             saved_pass   <= entered_pass;
-                            state        <= S0_ENTER_PASS; // Về Enter Pass sau khi đổi
+                            state        <= S0_ENTER_PASS; 
                             lcd_status   <= S0_ENTER_PASS;
                             update_status<= 1;
                             entered_pass <= 0;
